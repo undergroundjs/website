@@ -8,6 +8,8 @@ export default function Prospectus() {
   const theme = Layout.getTheme();
   const styles = {
     main: {
+      padding: '2rem 0',
+      fontSize: '1.4rem',
       h2: {
         margin: '2rem auto',
       },
@@ -48,7 +50,7 @@ export default function Prospectus() {
         title="Sponsoring"
         description="Contact us about sponsoring today!"
       />
-      <main css={[container, { fontSize: '1.4rem' }, styles.main]}>
+      <main css={[container, styles.main]}>
         <h2>Sponsoring</h2>
 
         <p>

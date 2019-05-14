@@ -2,11 +2,13 @@ import React from 'react';
 import Layout from '../components/Layout';
 import ExternalLink from '../components/ExternalLink';
 import { container } from '../lib/styles';
+import SEO from '../components/SEO';
 
 export default function Conduct() {
   return (
     <Layout>
-      <main css={[container]}>
+      <SEO title="Code of Conduct" />
+      <main css={[container, { padding: '2rem 0' }]}>
         <h1>Code of Conduct</h1>
         <p>
           All attendees, speakers, sponsors and volunteers at our conference are

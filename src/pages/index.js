@@ -5,7 +5,6 @@ import ExternalLink from '../components/ExternalLink';
 import { Link } from 'gatsby';
 import { theme, container } from '../lib/styles';
 import { SponsorIcon, TwitterIcon, EmailIcon } from '../icons';
-import { darken } from 'polished';
 
 export default function HomePage() {
   const styles = {
@@ -35,13 +34,9 @@ export default function HomePage() {
       fontSize: '3rem',
       padding: '1rem',
       margin: '.5rem',
-      color: 'white !important',
+      color: '#111 !important',
       backgroundColor: theme.colors.orange,
       textDecoration: 'none !important',
-      '&:hover, &:active': {
-        backgroundColor: darken('0.01', theme.colors.orange),
-        textShadow: '4px 4px 8px rgba(0,0,0,0.1)',
-      },
     },
   };
 

@@ -18,7 +18,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
-        logo: `${__dirname}/src/img/ugjs-square.png`,
+        logo: `${__dirname}/src/img/ugjs-square.jpg`,
       },
     },
     {

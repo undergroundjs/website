@@ -5,7 +5,7 @@ const Logo = () => {
   return (
     <img
       alt="Underground JS"
-      src={require('../img/underground-3d-1440.png')}
+      src={require('../img/logo-3d.png')}
       css={{ width: '80%' }}
     />
   );

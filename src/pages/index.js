@@ -111,7 +111,7 @@ export default function HomePage() {
             <div css={styles.cardBody}>
               <h3>Become a Sponsor?</h3>
               <Link to="/become-a-sponsor" css={styles.cardCTA}>
-                Prospectus
+                Sponsorship
               </Link>
             </div>
           </div>

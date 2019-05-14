@@ -11,6 +11,9 @@ export default function Prospectus() {
       h2: {
         margin: '2rem auto',
       },
+      h3: {
+        margin: '2rem auto 1rem',
+      },
       table: {
         width: '100%',
         borderCollapse: 'collapse',
@@ -33,6 +36,9 @@ export default function Prospectus() {
           },
         },
       },
+      ul: {
+        marginLeft: '3rem',
+      },
     },
   };
 
@@ -51,6 +57,34 @@ export default function Prospectus() {
           happening in our community. From side project and multi-team efforts
           to community involvement and personal growth.
         </p>
+
+        <p>
+          We will be hosting multiple session and long breaks during our single
+          day event to promote a learning and social environment.
+        </p>
+
+        <h3>Here are a list of our sponsorship offerings:</h3>
+
+        <ul>
+          <li>Booth (high-top, 4' or 6')</li>
+          <li>Branding on T Shirt</li>
+          <li>Branding on Banners</li>
+          <li>Branding on Printed Media</li>
+          <li>Branding on Website</li>
+          <li>Conference Tickets</li>
+        </ul>
+
+        <h3>Exclusive Sponsorship Options:</h3>
+        <ul>
+          <li>After party host</li>
+          <li>Lunch or Breakfast</li>
+          <li>Coffee</li>
+          <li>Lanyard</li>
+          <li>Badges</li>
+          <li>Swag Bag</li>
+          <li>VIP Dinner (Speakers and Volunteers)</li>
+          <li>Address attendees during opening remarks</li>
+        </ul>
 
         <p>
           We want to provide you with the best sponsoring experience custom for

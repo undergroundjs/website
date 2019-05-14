@@ -30,7 +30,11 @@ const Layout = ({ children }) => (
         {` `}
         <ExternalLink href="https://www.gatsbyjs.org">Gatsby</ExternalLink> |
         Hosted by{' '}
-        <ExternalLink href="https://netlify.com">Netlify</ExternalLink>
+        <ExternalLink href="https://netlify.com">Netlify</ExternalLink> |
+        Contribute on{' '}
+        <ExternalLink href="https://github.com/undergroundjs/website">
+          GitHub
+        </ExternalLink>
       </div>
     </footer>
   </ThemeProvider>

@@ -20,6 +20,12 @@ export default function Prospectus() {
         td: {
           padding: '.5rem .2rem',
         },
+        thead: {
+          td: {
+            textAlign: 'center',
+            fontStyle: 'italic',
+          },
+        },
         tbody: {
           tr: {
             '&:nth-child(even)': {
@@ -39,6 +45,9 @@ export default function Prospectus() {
       ul: {
         marginLeft: '3rem',
       },
+    },
+    highlight: {
+      backgroundColor: `${lighten(0.45, theme.colors.yellow)} !important`,
     },
   };
 
@@ -85,6 +94,136 @@ export default function Prospectus() {
           <li>VIP Dinner (Speakers and Volunteers)</li>
           <li>Address attendees during opening remarks</li>
         </ul>
+
+        <h2>Sponsorship Tiers</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Benefit</th>
+              <th css={styles.highlight}>Platinum (Limit 1)</th>
+              <th>Gold</th>
+              <th>Silver</th>
+              <th>Community</th>
+            </tr>
+            <tr>
+              <td> </td>
+              <td css={styles.highlight}>$7,000</td>
+              <td>$3,000</td>
+              <td>$1,000</td>
+              <td>$0</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Branding in conference media</td>
+              <td css={styles.highlight}>
+                <span role="img" aria-label="Benefit included">
+                  ️️✔️
+                </span>
+              </td>
+              <td>
+                <span role="img" aria-label="Benefit included">
+                  ️️✔️
+                </span>
+              </td>
+              <td>
+                <span role="img" aria-label="Benefit included">
+                  ️️✔️
+                </span>
+              </td>
+              <td>
+                <span role="img" aria-label="Benefit included">
+                  ️️✔️
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>Banner in conference hall</td>
+              <td css={styles.highlight}>
+                <span role="img" aria-label="Benefit included">
+                  ️️✔️
+                </span>
+              </td>
+              <td>
+                <span role="img" aria-label="Benefit included">
+                  ️️✔️
+                </span>
+              </td>
+              <td>
+                <span role="img" aria-label="Benefit included">
+                  ️️✔️
+                </span>
+              </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Branding on conference t-shirt</td>
+              <td css={styles.highlight}>
+                <span role="img" aria-label="Benefit included">
+                  ️️✔️
+                </span>
+              </td>
+              <td>
+                <span role="img" aria-label="Benefit included">
+                  ️️✔️
+                </span>
+              </td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Booth in conference hall</td>
+              <td css={styles.highlight}>
+                <span role="img" aria-label="Benefit included">
+                  ️️✔️
+                </span>
+              </td>
+              <td>
+                <span role="img" aria-label="Benefit included">
+                  ️️✔️
+                </span>
+              </td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Banner on stage</td>
+              <td css={styles.highlight}>
+                <span role="img" aria-label="Benefit included">
+                  ️️✔️
+                </span>
+              </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Address conference attendees</td>
+              <td css={styles.highlight}>
+                <span role="img" aria-label="Benefit included">
+                  ️️✔️
+                </span>
+              </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Scholarship tickets</td>
+              <td css={styles.highlight}>3</td>
+              <td>2</td>
+              <td>1</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Conference tickets</td>
+              <td css={styles.highlight}>4</td>
+              <td>3</td>
+              <td>2</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
 
         <p>
           We want to provide you with the best sponsoring experience custom for

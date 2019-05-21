@@ -2,15 +2,10 @@ import React from 'react';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import { container, theme } from '../lib/styles';
+import { useStaticQuery, graphql } from 'gatsby';
 
-export default function AboutPage(props) {
+const OrganizerCard = ({ name, bio, image }) => {
   const styles = {
-    organizerList: {
-      margin: '2rem 1rem',
-      display: 'flex',
-      flex: '1 1 0',
-      flexDirection: 'row',
-    },
     organizerCard: {
       background: theme.colors.light,
       padding: '1.25rem',
@@ -30,6 +25,47 @@ export default function AboutPage(props) {
   };
 
   return (
+    <div css={styles.organizerCard}>
+      <img src={image.src} css={styles.organizerImage} alt={image.alt} />
+      <div>
+        <span css={styles.organizerName}>{name}</span>
+        <p css={styles.organizerBio}>{bio}</p>
+      </div>
+    </div>
+  );
+};
+
+export default function AboutPage() {
+  const styles = {
+    organizerList: {
+      margin: '2rem 1rem',
+      display: 'flex',
+      flex: '1 1 0',
+      flexDirection: 'row',
+    },
+  };
+
+  const {
+    allOrganizersJson: { nodes: organizers },
+  } = useStaticQuery(graphql`
+    query OrganizerQuery {
+      allOrganizersJson {
+        nodes {
+          id
+          name
+          bio
+          image {
+            src
+            alt
+          }
+        }
+      }
+    }
+  `);
+
+  console.log(organizers);
+
+  return (
     <Layout>
       <SEO title="About" />
       <main css={[container, { padding: '2rem 0', fontSize: '1.4rem' }]}>
@@ -41,22 +77,9 @@ export default function AboutPage(props) {
         </p>
         <h2>Organizers</h2>
         <div css={styles.organizerList}>
-          <div css={styles.organizerCard}>
-            <img
-              src="https://pbs.twimg.com/profile_images/964298083126382592/yTIaTPcN_400x400.jpg"
-              css={styles.organizerImage}
-            />
-            <div>
-              <span css={styles.organizerName} alt="Kyle Welch's Face">
-                Kyle Welch
-              </span>
-              <p css={styles.organizerBio}>
-                Kyle is a Platform Engineer at Eventbrite. He loves to bring
-                people together and strives for an inclusive environment for
-                all.
-              </p>
-            </div>
-          </div>
+          {organizers.map((organizer, i) => (
+            <OrganizerCard key={i} {...organizer} />
+          ))}
         </div>
       </main>
     </Layout>

@@ -66,18 +66,10 @@ export default function HomePage() {
         </p>
 
         <p>
-          Underground JS is a nonprofit event facilitated by TechFed Nashville,
-          a Tennessee nonprofit organization whose mission is to support and
-          grow the grassroots tech talent in Middle Tennessee through
-          educational events and groups. TechFed provides financial stewardship,
-          risk management and volunteer leadership development for
-          Nashville-area technology events.
+          <Link to="about">
+            Read more about our mission and the team on our about page
+          </Link>
         </p>
-
-        <h4>
-          Join us as we celebrate our accomplishments and failures while
-          inspiring and empowering our future.
-        </h4>
 
         <div css={styles.cardContainer}>
           <div css={styles.card}>

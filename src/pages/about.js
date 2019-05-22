@@ -44,6 +44,13 @@ export default function AboutPage() {
       flex: '1 1 0',
       flexDirection: 'row',
     },
+    contactButton: {
+      fontSize: '1.2rem',
+      padding: '.5rem',
+      color: '#111 !important',
+      backgroundColor: theme.colors.orange,
+      textDecoration: 'none !important',
+    },
   };
 
   const {
@@ -74,6 +81,24 @@ export default function AboutPage() {
           community. By being community focused, our goal is to share different
           amazing projects, companies, and people in the Nashville community.
         </p>
+        <p>
+          Underground JS is a nonprofit event facilitated by TechFed Nashville,
+          a Tennessee nonprofit organization whose mission is to support and
+          grow the grassroots tech talent in Middle Tennessee through
+          educational events and groups. TechFed provides financial stewardship,
+          risk management and volunteer leadership development for
+          Nashville-area technology events.
+        </p>
+
+        <h4>
+          Join us as we celebrate our accomplishments and failures while
+          inspiring and empowering our future.
+        </h4>
+        <div css={{ textAlign: 'center', margin: '1rem' }}>
+          <a href="mailto:chair@undergroundjs.com" css={styles.contactButton}>
+            Contact Us
+          </a>
+        </div>
         <h2>Organizers</h2>
         <div css={styles.organizerList}>
           {organizers.map((organizer, i) => (

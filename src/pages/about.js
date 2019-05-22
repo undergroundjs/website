@@ -11,7 +11,7 @@ const OrganizerCard = ({ name, bio, image }) => {
       padding: '1.25rem',
       maxWidth: '400px',
       display: 'flex',
-      flexDirection: 'row',
+      flexDirection: 'column',
       alignItems: 'center',
     },
     organizerImage: {
@@ -19,6 +19,7 @@ const OrganizerCard = ({ name, bio, image }) => {
       height: '100px',
       borderRadius: '50%',
       marginRight: '1rem',
+      marginBottom: '.25rem'
     },
     organizerName: { fontWeight: 'bold' },
     organizerBio: { fontSize: '1.2rem' },
@@ -38,7 +39,7 @@ const OrganizerCard = ({ name, bio, image }) => {
 export default function AboutPage() {
   const styles = {
     organizerList: {
-      margin: '2rem 1rem',
+      margin: '2rem 0',
       display: 'flex',
       flex: '1 1 0',
       flexDirection: 'row',
@@ -68,7 +69,7 @@ export default function AboutPage() {
   return (
     <Layout>
       <SEO title="About" />
-      <main css={[container, { padding: '2rem 0', fontSize: '1.4rem' }]}>
+      <main css={[container, { padding: '2rem 1rem', fontSize: '1.4rem' }]}>
         <h2>About</h2>
         <p>
           UndergroundJS was founded to highlight and level up our local

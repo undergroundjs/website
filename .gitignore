@@ -85,3 +85,6 @@ typings/
 
 # gatsby
 public/
+
+# jetbrains
+.idea

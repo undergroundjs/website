@@ -3,11 +3,14 @@ import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import { container } from '../lib/styles';
 import { lighten } from 'polished';
+import { Link } from 'gatsby';
 
 export default function Prospectus() {
   const theme = Layout.getTheme();
   const styles = {
     main: {
+      padding: '2rem 0',
+      fontSize: '1.4rem',
       h2: {
         margin: '2rem auto',
       },
@@ -57,7 +60,7 @@ export default function Prospectus() {
         title="Sponsoring"
         description="Contact us about sponsoring today!"
       />
-      <main css={[container, { fontSize: '1.4rem' }, styles.main]}>
+      <main css={[container, styles.main]}>
         <h2>Sponsoring</h2>
 
         <p>
@@ -70,6 +73,11 @@ export default function Prospectus() {
         <p>
           We will be hosting multiple session and long breaks during our single
           day event to promote a learning and social environment.
+        </p>
+
+        <p>
+          Visit our <Link to="about">about page</Link> to learn more about or
+          mission and meet our organizers
         </p>
 
         <h3>Here are a list of our sponsorship offerings:</h3>

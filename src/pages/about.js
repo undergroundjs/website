@@ -13,6 +13,7 @@ const OrganizerCard = ({ name, bio, image }) => {
       display: 'flex',
       flexDirection: 'row',
       alignItems: 'center',
+      margin: '.25rem',
     },
     organizerImage: {
       width: '100px',
@@ -38,7 +39,7 @@ const OrganizerCard = ({ name, bio, image }) => {
 export default function AboutPage() {
   const styles = {
     organizerList: {
-      margin: '2rem 1rem',
+      margin: '2rem 0',
       display: 'flex',
       flex: '1 1 0',
       flexDirection: 'row',
@@ -62,8 +63,6 @@ export default function AboutPage() {
       }
     }
   `);
-
-  console.log(organizers);
 
   return (
     <Layout>

@@ -49,8 +49,19 @@ export default function HomePage() {
         </h3>
 
         <h3 css={{ margin: '2rem 0', textAlign: 'center' }}>
-          Location: Nashville, TN
+          <p>
+            Location:{' '}
+            <ExternalLink to="https://www.rocketown.com/">
+              Rocketown
+            </ExternalLink>
+          </p>
+          <span>
+            601 Fourth Ave South
+            <br />
+            Nashville, TN 37210
+          </span>
         </h3>
+
         <div css={{ display: 'flex', justifyContent: 'center' }}>
           <ExternalLink
             to="https://www.eventbrite.com/e/undergroundjs-tickets-61081666910?aff=website"

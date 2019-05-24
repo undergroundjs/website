@@ -39,10 +39,11 @@ const OrganizerCard = ({ name, bio, image }) => {
 export default function AboutPage() {
   const styles = {
     organizerList: {
+      display: 'grid',
+      gridAutoRows: "minmax(200px, auto)",
+      gridGap: '1rem',
+      gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
       margin: '2rem 0',
-      display: 'flex',
-      flex: '1 1 0',
-      flexDirection: 'row',
     },
     contactButton: {
       fontSize: '1.2rem',

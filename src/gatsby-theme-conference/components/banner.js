@@ -9,12 +9,17 @@ export default props => {
 
   return (
     <Box {...props} py={[5, 6]}>
-      <Container>
+      <Container
+        css={css({
+          display: "flex",
+          flexDirection: "column",
+        })}>
         <Styled.img
           css={css({
-            width: [375, 600, 740, 920, 1024],
+            width: [375, 600, 740, 920],
             mb: 2,
             mx: "auto",
+            alignSelf: "center",
           })}
           src={require("../../images/logo-3d.png")}
         />

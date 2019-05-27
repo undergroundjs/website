@@ -53,6 +53,16 @@ export default props => {
                 Code of Conduct
               </NavLink>
             </li>
+            <li>
+              <NavLink as={Link} to="/about">
+                About
+              </NavLink>
+            </li>
+            <li>
+              <NavLink as={Link} to="/become-a-sponsor">
+                Become a Sponsor
+              </NavLink>
+            </li>
             {/* <li>
               <NavLink as={Link} to="/scholarship">
                 Scholarship

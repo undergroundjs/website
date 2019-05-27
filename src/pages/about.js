@@ -27,13 +27,13 @@ const OrganizerCard = ({ name, bio, image }) => {
   };
 
   return (
-    <Styled.div css={styles.organizerCard}>
-      <Styled.img src={image.src} css={styles.organizerImage} alt={image.alt} />
-      <Styled.div>
-        <Styled.span css={styles.organizerName}>{name}</Styled.span>
-        <Styled.p css={styles.organizerBio}>{bio}</Styled.p>
-      </Styled.div>
-    </Styled.div>
+    <div css={styles.organizerCard}>
+      <img src={image.src} css={styles.organizerImage} alt={image.alt} />
+      <div>
+        <span css={styles.organizerName}>{name}</span>
+        <p css={styles.organizerBio}>{bio}</p>
+      </div>
+    </div>
   );
 };
 
@@ -61,8 +61,8 @@ export default function AboutPage() {
 
 
   const {
-  allOrganizersYaml: { nodes: organizers },
-} = useStaticQuery(graphql`
+    allOrganizersYaml: { nodes: organizers },
+  } = useStaticQuery(graphql`
     query OrganizerQuery {
       allOrganizersYaml {
         nodes {
@@ -95,22 +95,22 @@ export default function AboutPage() {
           risk management and volunteer leadership development for
           Nashville-area technology events.
         </Styled.p>
-        <Styled.h4>
+        <h4>
           Join us as we celebrate our accomplishments and failures while
           inspiring and empowering our future.
-        </Styled.h4>
-          <Button
-            styles={contactButton.styles}
-            href={contactButton.href}
-          >
-            Contact Us
-          </Button>
+        </h4>
+        <Button
+          styles={contactButton.styles}
+          href={contactButton.href}
+        >
+          Contact Us
+        </Button>
         <Styled.h2>Organizers</Styled.h2>
-        <Styled.div css={styles.organizerList}>
+        <div css={styles.organizerList}>
           {organizers.map((organizer, i) => (
             <OrganizerCard key={i} {...organizer} />
           ))}
-        </Styled.div>
+        </div>
       </Container>
     </Layout>
   );

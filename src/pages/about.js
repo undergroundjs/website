@@ -37,7 +37,7 @@ const OrganizerCard = ({ name, bio, image }) => {
   );
 };
 
-export default function AboutPage() {
+export default () => {
   const styles = {
     organizerList: {
       display: 'grid',
@@ -57,7 +57,7 @@ export default function AboutPage() {
       textDecoration: 'none !important',
     },
     href: 'mailto:chair@undergroundjs.com?subject=About'
-  }
+  };
 
 
   const {

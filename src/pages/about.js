@@ -27,13 +27,13 @@ const OrganizerCard = ({ name, bio, image }) => {
   };
 
   return (
-    <div css={styles.organizerCard}>
-      <img src={image.src} css={styles.organizerImage} alt={image.alt} />
-      <div>
-        <span css={styles.organizerName}>{name}</span>
-        <p css={styles.organizerBio}>{bio}</p>
-      </div>
-    </div>
+    <Styled.div css={styles.organizerCard}>
+      <Styled.img src={image.src} css={styles.organizerImage} alt={image.alt} />
+      <Styled.div>
+        <Styled.span css={styles.organizerName}>{name}</Styled.span>
+        <Styled.p css={styles.organizerBio}>{bio}</Styled.p>
+      </Styled.div>
+    </Styled.div>
   );
 };
 
@@ -95,10 +95,10 @@ export default function AboutPage() {
           risk management and volunteer leadership development for
           Nashville-area technology events.
         </Styled.p>
-        <h4>
+        <Styled.h4>
           Join us as we celebrate our accomplishments and failures while
           inspiring and empowering our future.
-        </h4>
+        </Styled.h4>
           <Button
             styles={contactButton.styles}
             href={contactButton.href}
@@ -106,11 +106,11 @@ export default function AboutPage() {
             Contact Us
           </Button>
         <Styled.h2>Organizers</Styled.h2>
-        <div css={styles.organizerList}>
+        <Styled.div css={styles.organizerList}>
           {organizers.map((organizer, i) => (
             <OrganizerCard key={i} {...organizer} />
           ))}
-        </div>
+        </Styled.div>
       </Container>
     </Layout>
   );

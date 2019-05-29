@@ -1,7 +1,7 @@
 - id: nss
   name: Nashville Software School
-  url: https://nashvillesoftwareschool.com/
-  logo: https://nashvillesoftwareschool.com/images/NSS-logo-horizontal-small.jpg
+  url: http://nashvillesoftwareschool.com/
+  logo: http://nashvillesoftwareschool.com/images/NSS-logo-horizontal-small.jpg
   tier: gold
 - id: gatsby
   name: Gatsby

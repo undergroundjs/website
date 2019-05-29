@@ -16,7 +16,7 @@ export default props => {
         })}>
         <Styled.img
           css={css({
-            width: [375, 600, 740, 920],
+            width: [450, 600, 740, 920],
             mb: 2,
             mx: "auto",
             alignSelf: "center",

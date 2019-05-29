@@ -1,40 +1,25 @@
-require('dotenv').config();
+/**
+ * Configure your Gatsby site with this file.
+ *
+ * See: https://www.gatsbyjs.org/docs/gatsby-config/
+ */
 
 module.exports = {
   siteMetadata: {
-    title: `Underground JS`,
-    description: `JavaScript conference hosted in Nashville, Summer 2019.`,
+    title: "UndergroundJS",
+    description:
+      "JavaScript conference hosted in Rocketown in Nashville on August 2nd 2019.",
+    twitter: "https://twitter.com/undergroundjs",
+    instagram: "",
   },
+  __experimentalThemes: ["gatsby-theme-conference"],
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    'gatsby-plugin-emotion',
-    'gatsby-transformer-json',
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/src/img`,
-        name: 'images',
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/src/content`,
-        name: 'content',
-      },
-    },
-    {
-      resolve: `gatsby-plugin-favicon`,
-      options: {
-        logo: `${__dirname}/src/img/ugjs-square.jpg`,
-      },
-    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-138176222-1',
+        trackingId: "UA-138176222-1",
       },
     },
-    'gatsby-plugin-netlify', // make sure to keep it last in the array
+    "gatsby-plugin-netlify", // make sure to keep it last in the array
   ],
-};
+}

@@ -1,66 +1,73 @@
-import React from 'react';
-import Layout from '../components/Layout';
-import SEO from '../components/SEO';
-import { container } from '../lib/styles';
-import { lighten } from 'polished';
-import { Link } from 'gatsby';
+import React from "react"
+import { Container } from "theme-ui/layout"
+import Layout from "gatsby-theme-conference/src/components/layout"
+import { Link } from "gatsby"
+import theme from '../gatsby-theme-conference/theme';
 
-export default function Prospectus() {
-  const theme = Layout.getTheme();
-  const styles = {
-    main: {
-      padding: '2rem 0',
-      fontSize: '1.4rem',
-      h2: {
-        margin: '2rem auto',
+import Button from '../components/button';
+
+const styles = {
+  main: {
+    padding: '2rem 0',
+    fontSize: '1.4rem',
+    h2: {
+      margin: '2rem auto',
+    },
+    h3: {
+      margin: '2rem auto 1rem',
+    },
+    table: {
+      width: '100%',
+      borderCollapse: 'collapse',
+      td: {
+        padding: '.5rem .2rem',
       },
-      h3: {
-        margin: '2rem auto 1rem',
-      },
-      table: {
-        width: '100%',
-        borderCollapse: 'collapse',
+      thead: {
         td: {
-          padding: '.5rem .2rem',
+          textAlign: 'center',
+          fontStyle: 'italic',
         },
-        thead: {
+      },
+      tbody: {
+        tr: {
+          '&:nth-child(even)': {
+            td: {
+              backgroundColor: theme.colors.secondary,
+            },
+          },
           td: {
             textAlign: 'center',
-            fontStyle: 'italic',
-          },
-        },
-        tbody: {
-          tr: {
-            '&:nth-child(even)': {
-              td: {
-                backgroundColor: lighten(0.1, theme.colors.light),
-              },
-            },
-            td: {
-              textAlign: 'center',
-              '&:first-of-type': {
-                textAlign: 'left',
-              },
+            '&:first-of-type': {
+              textAlign: 'left',
             },
           },
         },
       },
-      ul: {
-        marginLeft: '3rem',
-      },
     },
-    highlight: {
-      backgroundColor: `${lighten(0.45, theme.colors.yellow)} !important`,
+    ul: {
+      marginLeft: '3rem',
     },
-  };
+  },
+  highlight: {
+    backgroundColor: theme.colors.secondary,
+  },
+};
 
+const contactButton = {
+  styles: {
+    fontSize: '1.2rem',
+    padding: '.5rem',
+    color: '#111 !important',
+    backgroundColor: 'orange',
+    textDecoration: 'none !important',
+  },
+  href: 'mailto:chair@undergroundjs.com?subject=Sponsorship'
+};
+
+export default () => {
   return (
     <Layout>
-      <SEO
-        title="Sponsoring"
-        description="Contact us about sponsoring today!"
-      />
-      <main css={[container, styles.main]}>
+      <Container>
         <h2>Sponsoring</h2>
 
         <p>
@@ -106,130 +113,130 @@ export default function Prospectus() {
         <h2>Sponsorship Tiers</h2>
         <table>
           <thead>
-            <tr>
-              <th>Benefit</th>
-              <th css={styles.highlight}>Platinum (Limit 1)</th>
-              <th>Gold</th>
-              <th>Silver</th>
-              <th>Community</th>
-            </tr>
-            <tr>
-              <td> </td>
-              <td css={styles.highlight}>$7,000</td>
-              <td>$3,000</td>
-              <td>$1,000</td>
-              <td>$0</td>
-            </tr>
+          <tr>
+            <th>Benefit</th>
+            <th css={styles.highlight}>Platinum (Limit 1)</th>
+            <th>Gold</th>
+            <th>Silver</th>
+            <th>Community</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td css={styles.highlight}>$7,000</td>
+            <td>$3,000</td>
+            <td>$1,000</td>
+            <td>$0</td>
+          </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Branding in conference media</td>
-              <td css={styles.highlight}>
-                <span role="img" aria-label="Benefit included">
-                  ️️✔️
-                </span>
-              </td>
-              <td>
-                <span role="img" aria-label="Benefit included">
-                  ️️✔️
-                </span>
-              </td>
-              <td>
-                <span role="img" aria-label="Benefit included">
-                  ️️✔️
-                </span>
-              </td>
-              <td>
-                <span role="img" aria-label="Benefit included">
-                  ️️✔️
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <td>Banner in conference hall</td>
-              <td css={styles.highlight}>
-                <span role="img" aria-label="Benefit included">
-                  ️️✔️
-                </span>
-              </td>
-              <td>
-                <span role="img" aria-label="Benefit included">
-                  ️️✔️
-                </span>
-              </td>
-              <td>
-                <span role="img" aria-label="Benefit included">
-                  ️️✔️
-                </span>
-              </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td>Branding on conference t-shirt</td>
-              <td css={styles.highlight}>
-                <span role="img" aria-label="Benefit included">
-                  ️️✔️
-                </span>
-              </td>
-              <td>
-                <span role="img" aria-label="Benefit included">
-                  ️️✔️
-                </span>
-              </td>
-              <td> </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td>Booth in conference hall</td>
-              <td css={styles.highlight}>
-                <span role="img" aria-label="Benefit included">
-                  ️️✔️
-                </span>
-              </td>
-              <td>
-                <span role="img" aria-label="Benefit included">
-                  ️️✔️
-                </span>
-              </td>
-              <td> </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td>Banner on stage</td>
-              <td css={styles.highlight}>
-                <span role="img" aria-label="Benefit included">
-                  ️️✔️
-                </span>
-              </td>
-              <td> </td>
-              <td> </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td>Address conference attendees</td>
-              <td css={styles.highlight}>
-                <span role="img" aria-label="Benefit included">
-                  ️️✔️
-                </span>
-              </td>
-              <td> </td>
-              <td> </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td>Scholarship tickets</td>
-              <td css={styles.highlight}>3</td>
-              <td>2</td>
-              <td>1</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <td>Conference tickets</td>
-              <td css={styles.highlight}>4</td>
-              <td>3</td>
-              <td>2</td>
-              <td>0</td>
-            </tr>
+          <tr>
+            <td>Branding in conference media</td>
+            <td css={styles.highlight}>
+          <span role="img" aria-label="Benefit included">
+            ️️✔️
+          </span>
+            </td>
+            <td>
+          <span role="img" aria-label="Benefit included">
+            ️️✔️
+          </span>
+            </td>
+            <td>
+          <span role="img" aria-label="Benefit included">
+            ️️✔️
+          </span>
+            </td>
+            <td>
+          <span role="img" aria-label="Benefit included">
+            ️️✔️
+          </span>
+            </td>
+          </tr>
+          <tr>
+            <td>Banner in conference hall</td>
+            <td css={styles.highlight}>
+          <span role="img" aria-label="Benefit included">
+            ️️✔️
+          </span>
+            </td>
+            <td>
+          <span role="img" aria-label="Benefit included">
+            ️️✔️
+          </span>
+            </td>
+            <td>
+          <span role="img" aria-label="Benefit included">
+            ️️✔️
+          </span>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Branding on conference t-shirt</td>
+            <td css={styles.highlight}>
+          <span role="img" aria-label="Benefit included">
+            ️️✔️
+          </span>
+            </td>
+            <td>
+          <span role="img" aria-label="Benefit included">
+            ️️✔️
+          </span>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Booth in conference hall</td>
+            <td css={styles.highlight}>
+          <span role="img" aria-label="Benefit included">
+            ️️✔️
+          </span>
+            </td>
+            <td>
+          <span role="img" aria-label="Benefit included">
+            ️️✔️
+          </span>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Banner on stage</td>
+            <td css={styles.highlight}>
+          <span role="img" aria-label="Benefit included">
+            ️️✔️
+          </span>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Address conference attendees</td>
+            <td css={styles.highlight}>
+          <span role="img" aria-label="Benefit included">
+            ️️✔️
+          </span>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Scholarship tickets</td>
+            <td css={styles.highlight}>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Conference tickets</td>
+            <td css={styles.highlight}>4</td>
+            <td>3</td>
+            <td>2</td>
+            <td>0</td>
+          </tr>
           </tbody>
         </table>
 
@@ -238,8 +245,14 @@ export default function Prospectus() {
           your business. To find out more email us.
         </p>
 
-        <a href="mailto:sponsorships@undergroundjs.com">Contact us!</a>
-      </main>
+        <Button
+          styles={contactButton.styles}
+          href={contactButton.href}
+        >
+          Contact Us
+        </Button>
+      </Container>
     </Layout>
   );
 }
+

@@ -3,3 +3,4 @@
 # Redirect default Netlify subdomain to primary domain
 https://clever-villani-5f99ce.netlify.com/* https://undergroundjs.com/:splat 301!
 https://eager-blackwell-c3d9cd.netlify.com/* https://undergroundjs.com/:splat 301!
+https://undergroundjs.com/conduct https://undergroundjs.com/code-of-conduct 301!

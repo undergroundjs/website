@@ -1,34 +1,42 @@
-import React from 'react';
-import Layout from '../components/Layout';
-import ExternalLink from '../components/ExternalLink';
-import { container } from '../lib/styles';
-import SEO from '../components/SEO';
+import React from "react"
+import { Styled, css } from "theme-ui"
+import { Container } from "theme-ui/layout"
+import Layout from "gatsby-theme-conference/src/components/layout"
 
-export default function Conduct() {
+export default () => {
   return (
     <Layout>
-      <SEO title="Code of Conduct" />
-      <main css={[container, { padding: '2rem 0' }]}>
-        <h1>Code of Conduct</h1>
-        <p>
+      <Container>
+        <Styled.h1
+          css={css({
+            mb: 5,
+          })}
+        >
+          Code of Conduct
+        </Styled.h1>
+        <Styled.p
+          css={css({
+            my: 0,
+          })}
+        >
           All attendees, speakers, sponsors and volunteers at our conference are
           required to agree with the following code of conduct. Organizers will
           enforce this code throughout the event. We are expecting cooperation
           from all participants to help ensuring a safe environment for
           everybody.
-        </p>
+        </Styled.p>
 
-        <h2>Need Help?</h2>
-        <p>
-          Email us at{' '}
-          <a href="mailto:incidents@undergroundjs.com">
+        <Styled.h2>Need Help?</Styled.h2>
+        <Styled.p>
+          Email us at{" "}
+          <Styled.a href="mailto:incidents@undergroundjs.com">
             incidents@undergroundjs.com
-          </a>
+          </Styled.a>
           .
-        </p>
+        </Styled.p>
 
-        <h2>The Quick Version</h2>
-        <p>
+        <Styled.h3>The Quick Version</Styled.h3>
+        <Styled.p>
           Our conference is dedicated to providing a harassment-free conference
           experience for everyone, regardless of gender, gender identity and
           expression, age, sexual orientation, disability, physical appearance,
@@ -39,10 +47,10 @@ export default function Conduct() {
           participants violating these rules may be sanctioned or expelled from
           the conference without a refund at the discretion of the conference
           organizers.
-        </p>
+        </Styled.p>
 
-        <h2>The Less Quick Version</h2>
-        <p>
+        <Styled.h3>The Less Quick Version</Styled.h3>
+        <Styled.p>
           Harassment includes offensive verbal comments related to gender,
           gender identity and expression, age, sexual orientation, disability,
           physical appearance, body size, race, religion, sexual images in
@@ -50,47 +58,47 @@ export default function Conduct() {
           photography or recording, sustained disruption of talks or other
           events, inappropriate physical contact, and unwelcome sexual
           attention.
-        </p>
-        <p>
+        </Styled.p>
+        <Styled.p>
           Participants asked to stop any harassing behavior are expected to
           comply immediately.
-        </p>
-        <p>
+        </Styled.p>
+        <Styled.p>
           Sponsors are also subject to the anti-harassment policy. In
           particular, sponsors should not use sexualized images, activities, or
           other material. Booth staff (including volunteers) should not use
           sexualized clothing/uniforms/costumes, or otherwise create a
           sexualized environment.
-        </p>
-        <p>
+        </Styled.p>
+        <Styled.p>
           If a participant engages in harassing behavior, the conference
           organizers may take any action they deem appropriate, including
           warning the offender or expulsion from the conference with no refund.
-        </p>
-        <p>
+        </Styled.p>
+        <Styled.p>
           If you are being harassed, notice that someone else is being harassed,
           or have any other concerns, please contact a member of conference
           staff immediately. Conference staff can be identified as they'll be
           wearing branded t-shirts.
-        </p>
-        <p>
+        </Styled.p>
+        <Styled.p>
           Conference staff will be happy to help participants contact
           hotel/venue security or local law enforcement, provide escorts, or
           otherwise assist those experiencing harassment to feel safe for the
           duration of the conference. We value your attendance.
-        </p>
-        <p>
+        </Styled.p>
+        <Styled.p>
           We expect participants to follow these rules at conference and
           workshop venues and conference-related social events.
-        </p>
-        <h4>
-          This Code of Conduct is borrowed from{' '}
-          <ExternalLink href="http://confcodeofconduct.com/">
+        </Styled.p>
+        <Styled.p css={{ fontWeight: 800 }}>
+          This Code of Conduct is borrowed from{" "}
+          <Styled.a href="http://confcodeofconduct.com/">
             Conference Code of Conduct
-          </ExternalLink>
+          </Styled.a>
           .
-        </h4>
-      </main>
+        </Styled.p>
+      </Container>
     </Layout>
-  );
+  )
 }

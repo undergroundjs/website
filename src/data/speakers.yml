@@ -1,35 +1,35 @@
-- id: unknown
-  name: (To Be Announced)
-  image: https://i.stack.imgur.com/IHLNO.jpg
-  twitter:
-  github:
-  bio: " "
-  company: " "
 - id: stephaniewinn
   name: Stephanie Winn
   image: https://pbs.twimg.com/profile_images/1129240153334177792/dsyH7bd4_400x400.png
   twitter: https://twitter.com/steph_happens
   github: https://github.com/stephhappens
-  bio: " "
-  company: " "
+  bio: ' '
+  company: ' '
 - id: matthewtrask
   name: Matt Trask
   image: https://pbs.twimg.com/media/D7WdzuUWsAAFbvq?format=jpg&name=small
   twitter: https://twitter.com/matthewtrask
   github: https://github.com/matthewtrask
-  bio: " "
-  company: " "
+  bio: ' '
+  company: ' '
 - id: karaluton
   name: Kara Luton
   image: https://pbs.twimg.com/profile_images/1010566462782701568/6sDbHiB0_400x400.jpg
   twitter: https://twitter.com/karaluton
   github: https://github.com/karaluton
-  bio: " "
-  company: " "
+  bio: ' '
+  company: ' '
+- id: unknown
+  name: (To Be Announced)
+  image: https://i.stack.imgur.com/IHLNO.jpg
+  twitter:
+  github:
+  bio: ' '
+  company: ' '
 - id: jeromehardaway
   name: Jerome Hardaway
   image: https://pbs.twimg.com/profile_images/1124650799815188481/eNp-JX_K_400x400.jpg
   twitter: https://twitter.com/jeromehardaway
   github: https://github.com/jeromehardaway
-  bio: " "
-  company: " "
+  bio: ' '
+  company: ' '

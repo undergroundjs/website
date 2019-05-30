@@ -8,14 +8,14 @@
 - id: matthewtrask
   name: Matt Trask
   image: https://pbs.twimg.com/media/D7WdzuUWsAAFbvq?format=jpg&name=small
-  twitter: matthewtrask
-  github: matthewtrask
+  twitter: https://twitter.com/matthewtrask
+  github: https://github.com/matthewtrask
   bio: " "
   company: " "
 - id: karaluton
   name: Kara Luton
   image: https://pbs.twimg.com/profile_images/1010566462782701568/6sDbHiB0_400x400.jpg
-  twitter: karaluton
-  github: karaluton
+  twitter: https://twitter.com/karaluton
+  github: https://github.com/karaluton
   bio: " "
   company: " "

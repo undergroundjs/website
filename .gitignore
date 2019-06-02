@@ -84,10 +84,8 @@ typings/
 .dynamodb/
 
 # gatsby
-public/icons-b405b532ce0861f000987dbf9704729c
-public/static
-public/.iconstats.json
-public/index.html
+public/
+!public/_redirects
 
 # WebStorm
 .idea

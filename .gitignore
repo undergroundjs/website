@@ -88,3 +88,6 @@ public/
 
 # WebStorm
 .idea
+
+# netlify function
+built-lambda/

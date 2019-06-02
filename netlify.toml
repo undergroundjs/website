@@ -1,6 +1,7 @@
 [build]
   command = "yarn build"
   publish = "public"
+  functions = "built-lambda"
 
 [[redirects]]
   from = https://clever-villani-5f99ce.netlify.com/*

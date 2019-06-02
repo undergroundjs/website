@@ -1,0 +1,17 @@
+[build]
+  command = "yarn build"
+  publish = "public"
+
+[[redirects]]
+  from = https://clever-villani-5f99ce.netlify.com/*
+  to = https://undergroundjs.com/:splat
+  status = 301
+  force = true
+[[redirects]]
+  from = https://eager-blackwell-c3d9cd.netlify.com/*
+  to = https://undergroundjs.com/:splat
+  status = 301
+  force = true
+[[redirects]]
+  from = /conduct
+  to = /code-of-conduct

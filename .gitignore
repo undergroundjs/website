@@ -85,7 +85,6 @@ typings/
 
 # gatsby
 public/
-!public/_redirects
 
 # WebStorm
 .idea

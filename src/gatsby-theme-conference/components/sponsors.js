@@ -22,8 +22,6 @@ export default ({ sponsors = [] }) => {
     allFile: { nodes: images },
   } = data;
 
-  console.log(data, images);
-
   return (
     <Box
       id="sponsors"

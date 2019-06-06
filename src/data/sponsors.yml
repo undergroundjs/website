@@ -1,10 +1,15 @@
 - id: nss
   name: Nashville Software School
   url: http://nashvillesoftwareschool.com/
-  logo: http://nashvillesoftwareschool.com/images/NSS-logo-horizontal-small.jpg
+  logo: nss-logo
+  tier: gold
+- id: xoi
+  name: XOi Technologies
+  url: http://www.xoi.io/
+  logo: xoi-logo
   tier: gold
 - id: gatsby
   name: Gatsby
   url: https://gatsbyjs.org
-  logo: https://mutability.netlify.com/Gatsby-Logo.svg
+  logo: gatsby-logo
   tier: community

@@ -4,7 +4,7 @@ import { Box, Container } from 'theme-ui/layout';
 import SectionHeading from 'gatsby-theme-conference/src/components/section-heading';
 import FlexList from 'gatsby-theme-conference/src/components/flex-list';
 import Card from 'gatsby-theme-conference/src/components/card';
-import { useStaticQuery } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 
 export default ({ sponsors = [] }) => {
   const data = useStaticQuery(graphql`

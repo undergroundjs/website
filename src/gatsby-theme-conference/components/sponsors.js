@@ -70,9 +70,6 @@ export default ({ sponsors = [] }) => {
                     alt={sponsor.name}
                     css={css({
                       width: breakPointImageScale,
-                      // mb: 2,
-                      // mx: 'auto',
-                      // alignSelf: 'center',
                     })}
                   />
                 </Styled.a>

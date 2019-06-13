@@ -224,7 +224,7 @@ export default () => {
             <td></td>
           </tr>
           <tr>
-            <td>Scholarship tickets</td>
+            <td>Scholarship tickets*</td>
             <td css={styles.highlight}>3</td>
             <td>2</td>
             <td>1</td>
@@ -240,10 +240,12 @@ export default () => {
           </tbody>
         </table>
 
+        <small>* A part of the sponsorship goes to provide free tickets to those in need.</small>
         <p>
           We want to provide you with the best sponsoring experience custom for
           your business. To find out more email us.
         </p>
+
 
         <Button
           styles={contactButton.styles}

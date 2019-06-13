@@ -6,6 +6,11 @@ import FlexList from 'gatsby-theme-conference/src/components/flex-list';
 import Card from 'gatsby-theme-conference/src/components/card';
 import { useStaticQuery, graphql } from 'gatsby';
 
+const IMAGESCALE = 0.8044;
+const platinumTierImageSizes = [360, 600, 740, 920];
+const imageScaler = (i, repeat) =>
+  repeat === 1 ? i * IMAGESCALE : imageScaler(i * IMAGESCALE, repeat - 1);
+
 export default ({ sponsors = [] }) => {
   const data = useStaticQuery(graphql`
     query {
@@ -38,25 +43,42 @@ export default ({ sponsors = [] }) => {
             justifyContent: 'center',
           }}
         >
-          {sponsors.map((sponsor, i) => (
-            <Card as="li" key={sponsor.id}>
-              <Styled.a title={sponsor.name} href={sponsor.url}>
-                <Styled.img
-                  src={
-                    images.find(({ name }) => name === sponsor.logo).publicURL
-                  }
-                  alt={sponsor.name}
-                  css={css({
-                    width:
-                      i === 0 ? [360, 600, 740, 920] : [250, 414, 510, 635],
-                    mb: 2,
-                    mx: 'auto',
-                    alignSelf: 'center',
-                  })}
-                />
-              </Styled.a>
-            </Card>
-          ))}
+          {sponsors.map((sponsor) => {
+            const breakPointImageScale = ((tier) => {
+              switch (tier) {
+                case 'platinum':
+                  return platinumTierImageSizes;
+                case 'gold':
+                  return platinumTierImageSizes.map((i) => imageScaler(i, 1));
+                case 'silver':
+                  return platinumTierImageSizes.map((i) => imageScaler(i, 2));
+                case 'community':
+                  return platinumTierImageSizes.map((i) => imageScaler(i, 3));
+              }
+            })(sponsor.tier);
+            return (
+              <Card
+                as="li"
+                key={sponsor.id}
+                css={css({ display: 'flex', justifyContent: 'center' })}
+              >
+                <Styled.a title={sponsor.name} href={sponsor.url}>
+                  <Styled.img
+                    src={
+                      images.find(({ name }) => name === sponsor.logo).publicURL
+                    }
+                    alt={sponsor.name}
+                    css={css({
+                      width: breakPointImageScale,
+                      // mb: 2,
+                      // mx: 'auto',
+                      // alignSelf: 'center',
+                    })}
+                  />
+                </Styled.a>
+              </Card>
+            );
+          })}
         </FlexList>
       </Container>
     </Box>

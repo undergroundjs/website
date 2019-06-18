@@ -40,4 +40,10 @@
   github: https://github.com/itzsaga
   bio: "Nurturing Community: 4 years of freeCodeCamp Nashville"
   company: " "
-
+- id: kevinold
+  name: Kevin Old
+  image: https://pbs.twimg.com/profile_images/511294403286020096/I7MmjdYS_400x400.jpeg
+  twitter: https://twitter.com/kevinold
+  github: https://github.com/kevinold
+  bio: " "
+  company: "Intro to End to End Testing with Cypress.io"

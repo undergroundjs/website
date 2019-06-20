@@ -53,6 +53,7 @@ export default ({ sponsors = [] }) => {
                 case 'silver':
                   return platinumTierImageSizes.map((i) => imageScaler(i, 2));
                 case 'community':
+                default:
                   return platinumTierImageSizes.map((i) => imageScaler(i, 3));
               }
             })(sponsor.tier);

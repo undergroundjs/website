@@ -8,8 +8,18 @@
   url: http://www.xoi.io/
   logo: xoi-logo
   tier: gold
+- id: vaco
+  name: Vaco Technology-Nashville
+  url: http://www.vaco.com/
+  logo: vaco-logo
+  tier: gold
 - id: gatsby
   name: Gatsby
   url: https://gatsbyjs.org
   logo: gatsby-logo
+  tier: community
+- id: cypress
+  name: Cypress.io
+  url: https://www.cypress.io/
+  logo: cypress-logo
   tier: community

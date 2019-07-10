@@ -38,7 +38,7 @@ export default (props) => {
             Buy Tickets
           </Button>
           <Button href="https://forms.gle/8W92EGiu66pwUxCM7">
-            Diversity Scholarship
+            Scholarship
           </Button>
         </div>
       </Container>

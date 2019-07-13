@@ -14,7 +14,8 @@
   description: "Writing Newbie Friendly Code In Production"
 - date: 2019-08-02 10:30
   title: Lightning talk
-  description: " "
+  speaker: AmandaHasenzahl
+  description: "Introduction to Image Accessibility"
 - date: 2019-08-02 10:45
   title: Break
   description: " "
@@ -24,7 +25,8 @@
   description: "Intro to End to End Testing with Cypress.io"
 - date: 2019-08-02 11:30
   title: Lightning talk
-  description: " "
+  speaker: TannerPlauche
+  description: "Integrating Web Audio and Web Speech APIs into applications"
 - date: 2019-08-02 11:45
   title: Lunch
   description: " "

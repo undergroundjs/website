@@ -1,10 +1,10 @@
-import React from "react"
-import { Container } from "theme-ui/layout"
-import Layout from "gatsby-theme-conference/src/components/layout"
-import { Link } from "gatsby"
+import React from 'react';
+import { Container } from 'theme-ui/layout';
+import { Styled } from 'theme-ui';
+import Layout from 'gatsby-theme-conference/src/components/layout';
+import { Link } from 'gatsby';
 import theme from '../gatsby-theme-conference/theme';
-
-import Button from '../components/button';
+import Button from 'gatsby-theme-conference/src/components/button';
 
 const styles = {
   main: {
@@ -19,6 +19,7 @@ const styles = {
     table: {
       width: '100%',
       borderCollapse: 'collapse',
+      marginTop: '1rem',
       td: {
         padding: '.5rem .2rem',
       },
@@ -53,22 +54,11 @@ const styles = {
   },
 };
 
-const contactButton = {
-  styles: {
-    fontSize: '1.2rem',
-    padding: '.5rem',
-    color: '#111 !important',
-    backgroundColor: 'orange',
-    textDecoration: 'none !important',
-  },
-  href: 'mailto:chair@undergroundjs.com?subject=Sponsorship'
-};
-
 export default () => {
   return (
     <Layout>
       <Container>
-        <h2>Sponsoring</h2>
+        <Styled.h2>Sponsoring</Styled.h2>
 
         <p>
           UndergroundJS will bring together 250 of Nashville's talented
@@ -87,7 +77,7 @@ export default () => {
           mission and meet our organizers
         </p>
 
-        <h3>Here are a list of our sponsorship offerings:</h3>
+        <Styled.h3>Here are a list of our sponsorship offerings:</Styled.h3>
 
         <ul>
           <li>Booth (high-top, 4' or 6')</li>
@@ -98,7 +88,7 @@ export default () => {
           <li>Conference Tickets</li>
         </ul>
 
-        <h3>Exclusive Sponsorship Options:</h3>
+        <Styled.h3>Exclusive Sponsorship Options:</Styled.h3>
         <ul>
           <li>After party host</li>
           <li>Lunch or Breakfast</li>
@@ -110,151 +100,168 @@ export default () => {
           <li>Address attendees during opening remarks</li>
         </ul>
 
-        <h2>Sponsorship Tiers</h2>
-        <table>
+        <Styled.h3>Sponsorship Tiers</Styled.h3>
+        <table css={styles.main.table}>
           <thead>
-          <tr>
-            <th>Benefit</th>
-            <th css={styles.highlight}>Platinum (Limit 1)</th>
-            <th>Gold</th>
-            <th>Silver</th>
-            <th>Community</th>
-          </tr>
-          <tr>
-            <td></td>
-            <td css={styles.highlight}>$7,000</td>
-            <td>$3,000</td>
-            <td>$1,000</td>
-            <td>$0</td>
-          </tr>
+            <tr>
+              <th>Benefit</th>
+              <th css={styles.highlight}>Platinum (Limit 1)</th>
+              <th>Gold</th>
+              <th>Silver</th>
+              <th>Community</th>
+            </tr>
+            <tr>
+              <td></td>
+              <td css={styles.highlight}>$7,000</td>
+              <td>$3,000</td>
+              <td>$1,000</td>
+              <td>$0</td>
+            </tr>
           </thead>
           <tbody>
-          <tr>
-            <td>Branding in conference media</td>
-            <td css={styles.highlight}>
-          <span role="img" aria-label="Benefit included">
-            ️️✔️
-          </span>
-            </td>
-            <td>
-          <span role="img" aria-label="Benefit included">
-            ️️✔️
-          </span>
-            </td>
-            <td>
-          <span role="img" aria-label="Benefit included">
-            ️️✔️
-          </span>
-            </td>
-            <td>
-          <span role="img" aria-label="Benefit included">
-            ️️✔️
-          </span>
-            </td>
-          </tr>
-          <tr>
-            <td>Banner in conference hall</td>
-            <td css={styles.highlight}>
-          <span role="img" aria-label="Benefit included">
-            ️️✔️
-          </span>
-            </td>
-            <td>
-          <span role="img" aria-label="Benefit included">
-            ️️✔️
-          </span>
-            </td>
-            <td>
-          <span role="img" aria-label="Benefit included">
-            ️️✔️
-          </span>
-            </td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Branding on conference t-shirt</td>
-            <td css={styles.highlight}>
-          <span role="img" aria-label="Benefit included">
-            ️️✔️
-          </span>
-            </td>
-            <td>
-          <span role="img" aria-label="Benefit included">
-            ️️✔️
-          </span>
-            </td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Booth in conference hall</td>
-            <td css={styles.highlight}>
-          <span role="img" aria-label="Benefit included">
-            ️️✔️
-          </span>
-            </td>
-            <td>
-          <span role="img" aria-label="Benefit included">
-            ️️✔️
-          </span>
-            </td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Banner on stage</td>
-            <td css={styles.highlight}>
-          <span role="img" aria-label="Benefit included">
-            ️️✔️
-          </span>
-            </td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Address conference attendees</td>
-            <td css={styles.highlight}>
-          <span role="img" aria-label="Benefit included">
-            ️️✔️
-          </span>
-            </td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Scholarship tickets*</td>
-            <td css={styles.highlight}>3</td>
-            <td>2</td>
-            <td>1</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>Conference tickets</td>
-            <td css={styles.highlight}>4</td>
-            <td>3</td>
-            <td>2</td>
-            <td>0</td>
-          </tr>
+            <tr>
+              <td>Branding in conference media</td>
+              <td css={styles.highlight}>
+                <span role="img" aria-label="Benefit included">
+                  ️️✔️
+                </span>
+              </td>
+              <td>
+                <span role="img" aria-label="Benefit included">
+                  ️️✔️
+                </span>
+              </td>
+              <td>
+                <span role="img" aria-label="Benefit included">
+                  ️️✔️
+                </span>
+              </td>
+              <td>
+                <span role="img" aria-label="Benefit included">
+                  ️️✔️
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>Banner in conference hall</td>
+              <td css={styles.highlight}>
+                <span role="img" aria-label="Benefit included">
+                  ️️✔️
+                </span>
+              </td>
+              <td>
+                <span role="img" aria-label="Benefit included">
+                  ️️✔️
+                </span>
+              </td>
+              <td>
+                <span role="img" aria-label="Benefit included">
+                  ️️✔️
+                </span>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Branding on conference t-shirt</td>
+              <td css={styles.highlight}>
+                <span role="img" aria-label="Benefit included">
+                  ️️✔️
+                </span>
+              </td>
+              <td>
+                <span role="img" aria-label="Benefit included">
+                  ️️✔️
+                </span>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Booth in conference hall</td>
+              <td css={styles.highlight}>
+                <span role="img" aria-label="Benefit included">
+                  ️️✔️
+                </span>
+              </td>
+              <td>
+                <span role="img" aria-label="Benefit included">
+                  ️️✔️
+                </span>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Small table in conference hall</td>
+              <td css={styles.highlight}>
+                <span role="img" aria-label="Benefit included">
+                  ️️
+                </span>
+              </td>
+              <td>
+                <span role="img" aria-label="Benefit included">
+                  ️️
+                </span>
+              </td>
+              <td>
+                <span role="img" aria-label="Benefit included">
+                  ️️✔️
+                </span>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Banner on stage</td>
+              <td css={styles.highlight}>
+                <span role="img" aria-label="Benefit included">
+                  ️️✔️
+                </span>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Address conference attendees</td>
+              <td css={styles.highlight}>
+                <span role="img" aria-label="Benefit included">
+                  ️️✔️
+                </span>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Scholarship tickets*</td>
+              <td css={styles.highlight}>3</td>
+              <td>2</td>
+              <td>1</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Conference tickets</td>
+              <td css={styles.highlight}>4</td>
+              <td>3</td>
+              <td>2</td>
+              <td>0</td>
+            </tr>
           </tbody>
         </table>
 
-        <small>* A part of the sponsorship goes to provide free tickets to those in need.</small>
+        <small>
+          * A part of the sponsorship goes to provide free tickets to those in
+          need.
+        </small>
         <p>
           We want to provide you with the best sponsoring experience custom for
           your business. To find out more email us.
         </p>
 
-
-        <Button
-          styles={contactButton.styles}
-          href={contactButton.href}
-        >
+        <Button href="mailto:chair@undergroundjs.com?subject=Sponsorship">
           Contact Us
         </Button>
       </Container>
     </Layout>
   );
-}
-
+};

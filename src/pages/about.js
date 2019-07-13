@@ -1,10 +1,9 @@
-import React from "react"
-import { Styled } from "theme-ui"
-import { Container } from "theme-ui/layout"
-import Layout from "gatsby-theme-conference/src/components/layout"
+import React from 'react';
+import { Styled } from 'theme-ui';
+import { Container } from 'theme-ui/layout';
+import Layout from 'gatsby-theme-conference/src/components/layout';
 import { graphql, useStaticQuery } from 'gatsby';
-
-import Button from '../components/button';
+import Button from 'gatsby-theme-conference/src/components/button';
 
 const OrganizerCard = ({ name, bio, image }) => {
   const styles = {
@@ -41,24 +40,12 @@ export default () => {
   const styles = {
     organizerList: {
       display: 'grid',
-      gridAutoRows: "minmax(200px, auto)",
+      gridAutoRows: 'minmax(200px, auto)',
       gridGap: '1rem',
-      gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
+      gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
       margin: '2rem',
     },
   };
-
-  const contactButton = {
-    styles: {
-      fontSize: '1.2rem',
-      padding: '.5rem',
-      color: '#111 !important',
-      backgroundColor: 'orange',
-      textDecoration: 'none !important',
-    },
-    href: 'mailto:chair@undergroundjs.com?subject=About'
-  };
-
 
   const {
     allOrganizersYaml: { nodes: organizers },
@@ -70,8 +57,8 @@ export default () => {
           name
           bio
           image {
-           src
-           alt
+            src
+            alt
           }
         }
       }
@@ -99,10 +86,7 @@ export default () => {
           Join us as we celebrate our accomplishments and failures while
           inspiring and empowering our future.
         </h4>
-        <Button
-          styles={contactButton.styles}
-          href={contactButton.href}
-        >
+        <Button href="mailto:chair@undergroundjs.com?subject=About">
           Contact Us
         </Button>
         <Styled.h2>Organizers</Styled.h2>
@@ -114,4 +98,4 @@ export default () => {
       </Container>
     </Layout>
   );
-}
+};

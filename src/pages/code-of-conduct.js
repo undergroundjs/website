@@ -1,7 +1,7 @@
-import React from "react"
-import { Styled, css } from "theme-ui"
-import { Container } from "theme-ui/layout"
-import Layout from "gatsby-theme-conference/src/components/layout"
+import React from 'react';
+import { Styled, css } from 'theme-ui';
+import { Container } from 'theme-ui/layout';
+import Layout from 'gatsby-theme-conference/src/components/layout';
 
 export default () => {
   return (
@@ -28,7 +28,7 @@ export default () => {
 
         <Styled.h2>Need Help?</Styled.h2>
         <Styled.p>
-          Email us at{" "}
+          Email us at{' '}
           <Styled.a href="mailto:incidents@undergroundjs.com">
             incidents@undergroundjs.com
           </Styled.a>
@@ -92,7 +92,7 @@ export default () => {
           workshop venues and conference-related social events.
         </Styled.p>
         <Styled.p css={{ fontWeight: 800 }}>
-          This Code of Conduct is borrowed from{" "}
+          This Code of Conduct is borrowed from{' '}
           <Styled.a href="http://confcodeofconduct.com/">
             Conference Code of Conduct
           </Styled.a>
@@ -100,5 +100,5 @@ export default () => {
         </Styled.p>
       </Container>
     </Layout>
-  )
-}
+  );
+};

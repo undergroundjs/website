@@ -47,4 +47,19 @@
   github: https://github.com/tysoncadenhead
   bio: "GraphQL Schema Design"
   company: " "
+- id: AmandaHasenzahl
+  name: "Amanda Hasenzahl"
+  bio: "Introduction to Image Accessibility"
+  image: https://pbs.twimg.com/profile_images/1103736063229595649/nceoLODq_400x400.jpg
+  twitter: https://twitter.com/alhasenzahl
+  github: https://github.com/alhasenzahl
+  company: " "
+- id: TannerPlauche
+  name: "Tanner Plauché"
+  bio: "Integrating Web Audio and Web Speech APIs into applications"
+  image: https://avatars1.githubusercontent.com/u/12735406?s=460&v=4
+  twitter: https://twitter.com/thePhonetician
+  github: https://github.com/tannerplauche
+  company: " "
+
 

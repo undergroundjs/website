@@ -16,7 +16,7 @@
 - id: smiledirectclub
   name: SmileDirectClub
   url: https://smiledirectclub.com/
-  logo: logo-smiledirectclub
+  logo: smiledirectclub-logo
   tier: gold
 - id: gatsby
   name: Gatsby

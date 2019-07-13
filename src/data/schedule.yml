@@ -4,41 +4,43 @@
 - date: 2019-08-02 09:00
   title: Keynote
   speaker: stephaniewinn
-  description: " "
+  description: "Building a strong developer community for the future"
 - date: 2019-08-02 09:45
   title: Break
   description: " "
 - date: 2019-08-02 10:00
   title: Session
   speaker: jeromehardaway
-  description: " "
+  description: "Writing Newbie Friendly Code In Production"
 - date: 2019-08-02 10:30
   title: Lightning talk
-  description: " "
+  speaker: AmandaHasenzahl
+  description: "Introduction to Image Accessibility"
 - date: 2019-08-02 10:45
   title: Break
   description: " "
 - date: 2019-08-02 11:00
   title: Session
   speaker: kevinold
-  description: " "
+  description: "Intro to End to End Testing with Cypress.io"
 - date: 2019-08-02 11:30
   title: Lightning talk
-  description: " "
+  speaker: TannerPlauche
+  description: "Integrating Web Audio and Web Speech APIs into applications"
 - date: 2019-08-02 11:45
   title: Lunch
   description: " "
 - date: 2019-08-02 14:00
   title: Keynote
   speaker: matthewtrask
-  description: " "
+  description: "Mental Health: you and me!"
 - date: 2019-08-02 14:45
   title: Break
   description: " "
 - date: 2019-08-02 15:00
   title: Session
   speaker: tysoncadenhead
-  description: " "
+  description: "GraphQL Schema Design"
 - date: 2019-08-02 15:30
   title: Lightning talk
   description: " "
@@ -48,7 +50,7 @@
 - date: 2019-08-02 16:00
   title: Session
   speaker: sethalexander
-  description: " "
+  description: "Nurturing Community: 4 years of freeCodeCamp Nashville"
 - date: 2019-08-02 16:30
   title: Lightning talk
   description: " "
@@ -58,7 +60,4 @@
 - date: 2019-08-02 17:00
   title: Keynote
   speaker: karaluton
-  description: " "
-- date: 2019-08-02 18:00
-  title: After Party
-  description: " "
+  description: "From Tutus To Tech: Looking Back on Transitioning Careers (Twice!)"

@@ -6,10 +6,24 @@ import FlexList from 'gatsby-theme-conference/src/components/flex-list';
 import Card from 'gatsby-theme-conference/src/components/card';
 import { useStaticQuery, graphql } from 'gatsby';
 
-const IMAGESCALE = 0.8044;
+const IMAGESCALE = 0.68044;
 const platinumTierImageSizes = [360, 600, 740, 920];
 const imageScaler = (i, repeat) =>
   repeat === 1 ? i * IMAGESCALE : imageScaler(i * IMAGESCALE, repeat - 1);
+
+const getBreakPointImageScale = (tier) => {
+  switch (tier) {
+    case 'platinum':
+      return platinumTierImageSizes;
+    case 'gold':
+      return platinumTierImageSizes.map((i) => imageScaler(i, 1));
+    case 'silver':
+      return platinumTierImageSizes.map((i) => imageScaler(i, 2));
+    case 'community':
+    default:
+      return platinumTierImageSizes.map((i) => imageScaler(i, 3));
+  }
+};
 
 export default ({ sponsors = [] }) => {
   const data = useStaticQuery(graphql`
@@ -44,19 +58,7 @@ export default ({ sponsors = [] }) => {
           }}
         >
           {sponsors.map((sponsor) => {
-            const breakPointImageScale = ((tier) => {
-              switch (tier) {
-                case 'platinum':
-                  return platinumTierImageSizes;
-                case 'gold':
-                  return platinumTierImageSizes.map((i) => imageScaler(i, 1));
-                case 'silver':
-                  return platinumTierImageSizes.map((i) => imageScaler(i, 2));
-                case 'community':
-                default:
-                  return platinumTierImageSizes.map((i) => imageScaler(i, 3));
-              }
-            })(sponsor.tier);
+            const breakPointImageScale = getBreakPointImageScale(sponsor.tier);
             return (
               <Card
                 as="li"

@@ -9,9 +9,14 @@
   logo: xoi-logo
   tier: gold
 - id: vaco
-  name: Vaco
-  url: https://www.vaco.com
+  name: Vaco Technology-Nashville
+  url: http://www.vaco.com/
   logo: vaco-logo
+  tier: gold
+- id: smiledirectclub
+  name: SmileDirectClub
+  url: https://smiledirectclub.com/
+  logo: smiledirectclub-logo
   tier: gold
 - id: gatsby
   name: Gatsby
@@ -19,7 +24,7 @@
   logo: gatsby-logo
   tier: community
 - id: cypress
-  name: Cypress
-  url: https://cypress.io
+  name: Cypress.io
+  url: https://www.cypress.io/
   logo: cypress-logo
   tier: community

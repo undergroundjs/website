@@ -43,7 +43,8 @@
   description: "GraphQL Schema Design"
 - date: 2019-08-02 15:30
   title: Lightning talk
-  description: " "
+  speaker: SeanHamlet
+  description: "Loop, Stack, and Queue: How Async works in a Single threaded world"
 - date: 2019-08-02 15:45
   title: Break
   description: " "
@@ -53,7 +54,8 @@
   description: "Nurturing Community: 4 years of freeCodeCamp Nashville"
 - date: 2019-08-02 16:30
   title: Lightning talk
-  description: " "
+  speaker: LauraPinell
+  description: "Thinking In React: A Presentation on ReactJS Component Hierarchies"
 - date: 2019-08-02 16:45
   title: Break
   description: " "

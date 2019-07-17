@@ -61,6 +61,17 @@
   twitter: https://twitter.com/thePhonetician
   github: https://github.com/tannerplauche
   company: " "
-
-
-
+- id: SeanHamlet
+  name: "Sean Hamlet"
+  bio: "Loop, Stack, and Queue: How Async works in a Single threaded world"
+  image: https://avatars3.githubusercontent.com/u/12764330?s=460&v=4
+  twitter: " "
+  github: https://github.com/shamlet
+  company: " "
+- id: LauraPinell
+  name: "Laura Pinell"
+  company: " "
+  bio: "Thinking In React: A Presentation on ReactJS Component Hierarchies"
+  image: https://avatars1.githubusercontent.com/u/18263563?s=400&v=4
+  twitter: https://twitter.com/laurapinell
+  github: https://github.com/lapinell

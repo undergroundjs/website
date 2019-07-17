@@ -68,6 +68,10 @@
   twitter: " "
   github: https://github.com/shamlet
   company: " "
-
-
-
+- id: LauraPinell
+  name: "Laura Pinell"
+  company: " "
+  bio: "Thinking In React: A Presentation on ReactJS Component Hierarchies"
+  image: https://nashdev.slack.com/files/U8Z1Y7HH6/FLFNE5HSQ/img_2836.jpg
+  twitter: https://twitter.com/laurapinell
+  github: https://github.com/lapinell

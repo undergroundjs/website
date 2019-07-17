@@ -54,7 +54,8 @@
   description: "Nurturing Community: 4 years of freeCodeCamp Nashville"
 - date: 2019-08-02 16:30
   title: Lightning talk
-  description: " "
+  speaker: LauraPinell
+  description: "Thinking In React: A Presentation on ReactJS Component Hierarchies"
 - date: 2019-08-02 16:45
   title: Break
   description: " "

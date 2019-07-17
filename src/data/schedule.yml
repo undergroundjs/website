@@ -43,7 +43,8 @@
   description: "GraphQL Schema Design"
 - date: 2019-08-02 15:30
   title: Lightning talk
-  description: " "
+  speaker: SeanHamlet
+  description: "Loop, Stack, and Queue: How Async works in a Single threaded world"
 - date: 2019-08-02 15:45
   title: Break
   description: " "

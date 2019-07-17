@@ -63,7 +63,7 @@
   company: " "
 - id: SeanHamlet
   name: "Sean Hamlet"
-  bio: " "
+  bio: "Loop, Stack, and Queue: How Async works in a Single threaded world"
   image: https://avatars3.githubusercontent.com/u/12764330?s=460&v=4
   twitter: " "
   github: https://github.com/shamlet

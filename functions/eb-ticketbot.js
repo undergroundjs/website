@@ -15,9 +15,9 @@ const actionHandlerList = {
   'order.placed': {
     getData: async (url) => sdk.request(`${url}?expand=attendees`),
     getMessage: (data) =>
-      `:tada::tada::tada:Order placed (${
-        data.promo_code
-      })! ${getAttendeeTicketCount(data).join(', ')}`,
+      `:tada::tada::tada:Order placed! ${
+        data.promo_code ? `CODE: ${data.promo_code}` : ''
+      } ${getAttendeeTicketCount(data).join(', ')}`,
   },
 };
 

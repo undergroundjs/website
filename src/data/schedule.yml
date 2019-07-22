@@ -3,8 +3,8 @@
   description: " "
 - date: 2019-08-02 09:00
   title: Keynote
-  speaker: stephaniewinn
-  description: "Building a strong developer community for the future"
+  speaker: karaluton
+  description: "From Tutus To Tech: Looking Back on Transitioning Careers (Twice!)"
 - date: 2019-08-02 09:45
   title: Break
   description: " "
@@ -61,5 +61,5 @@
   description: " "
 - date: 2019-08-02 17:00
   title: Keynote
-  speaker: karaluton
-  description: "From Tutus To Tech: Looking Back on Transitioning Careers (Twice!)"
+  speaker: stephaniewinn
+  description: "Building a strong developer community for the future"

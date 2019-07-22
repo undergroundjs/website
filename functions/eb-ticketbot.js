@@ -1,16 +1,12 @@
 import fetch from 'node-fetch';
 import eventbrite from 'eventbrite';
+import { getAttendeeTicketCount } from './utils';
 require('dotenv').config();
 
 const sdk = eventbrite({
   baseUrl: '',
   token: process.env.EB_OAUTH_TOKEN,
 });
-
-const getAttendeeTicketCount = ({ attendees }) =>
-  attendees.map(
-    ({ quantity, ticket_class_name: ticketType }) => `${quantity} ${ticketType}`
-  );
 
 const actionHandlerList = {
   test: {
@@ -19,9 +15,9 @@ const actionHandlerList = {
   'order.placed': {
     getData: async (url) => sdk.request(`${url}?expand=attendees`),
     getMessage: (data) =>
-      `:tada::tada::tada:Order placed!\n*Details*:\n${getAttendeeTicketCount(
-        data
-      ).join('\n')}`,
+      `:tada::tada::tada:Order placed (${
+        data.promo_code
+      })! ${getAttendeeTicketCount(data).join(', ')}`,
   },
 };
 

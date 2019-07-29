@@ -96,6 +96,18 @@ export default () => {
         <Styled.p>
           Please have you ticket ready, for a smooth check in process.
         </Styled.p>
+
+        <Styled.h3>Have a question you don't see answered?</Styled.h3>
+        <Styled.p>
+          <Styled.a href="mailto:chair@undergroundjs.com?subject=FAQ">
+            Contact us
+          </Styled.a>{' '}
+          or{' '}
+          <Styled.a href="https://github.com/undergroundjs/website">
+            submit a pull request
+          </Styled.a>
+          .
+        </Styled.p>
       </Container>
     </Layout>
   );

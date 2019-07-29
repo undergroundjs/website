@@ -74,6 +74,11 @@ export default () => {
           </Styled.a>
           .
         </Styled.p>
+        <Styled.p>
+          Snack will be available throughout the day. We will also be providing
+          water to ensure everyone is well hydrated. Rocketown also, has a cafe
+          that will be open to purchase additional refreshments.
+        </Styled.p>
         <Styled.h3>What about dietary options?</Styled.h3>
         <Styled.p>
           During ticket purchase process, you can let us know any restrictions

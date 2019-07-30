@@ -41,7 +41,7 @@ export default () => {
         <Styled.p>
           We take these incidents very seriously, contact us via{' '}
           <Styled.a href="mailto:incidents@undergroundjs.com">email</Styled.a>{' '}
-          or by phone <Styled.a href="tel:XXX-XXX-XXXX">XXX-XXX-XXXX</Styled.a>.
+          or by phone <Styled.a href="tel:901-295-8011">901-295-8011</Styled.a>.
         </Styled.p>
         <Styled.h3>Where is the event?</Styled.h3>
         <Styled.p>

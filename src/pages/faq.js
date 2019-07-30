@@ -65,7 +65,8 @@ export default () => {
 
         <Styled.h3>Will food/drinks be served?</Styled.h3>
         <Styled.p>
-          For breakfast, we will be serving coffee and light pastries.
+          For breakfast, we will be serving coffee and light pastries (muffins,
+          danishes, and granola & fruit bars).
         </Styled.p>
         <Styled.p>
           For lunch, Sifted will be catering Crunchy Tacos.{' '}
@@ -78,6 +79,10 @@ export default () => {
           Snack will be available throughout the day. We will also be providing
           water to ensure everyone is well hydrated. Rocketown also, has a cafe
           that will be open to purchase additional refreshments.
+        </Styled.p>
+        <Styled.p>
+          Snacks include: peanuts, chips, granola & fruit bars, fruit snacks,
+          crackers, and ice pops!
         </Styled.p>
         <Styled.h3>What about dietary options?</Styled.h3>
         <Styled.p>

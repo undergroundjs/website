@@ -1,9 +1,7 @@
 import React from 'react';
 import { Container } from 'theme-ui/layout';
 import { Styled } from 'theme-ui';
-import { Link } from 'gatsby';
 import Layout from 'gatsby-theme-conference/src/components/layout';
-import NavLink from 'gatsby-theme-conference/src/components/nav-link';
 import Button from 'gatsby-theme-conference/src/components/button';
 import theme from '../gatsby-theme-conference/theme';
 
@@ -74,11 +72,8 @@ export default () => {
         </p>
 
         <p>
-          Visit our{' '}
-          <NavLink as={Link} to="about">
-            about page
-          </NavLink>{' '}
-          to learn more about or mission and meet our organizers
+          Visit our <Styled.a href="/about">about page</Styled.a> to learn more
+          about or mission and meet our organizers
         </p>
 
         <Styled.h3>Here are a list of our sponsorship offerings:</Styled.h3>

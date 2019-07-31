@@ -2,8 +2,7 @@ import React from 'react';
 import { Styled, css } from 'theme-ui';
 import { Container } from 'theme-ui/layout';
 import Layout from 'gatsby-theme-conference/src/components/layout';
-import NavLink from 'gatsby-theme-conference/src/components/nav-link';
-import { Link, useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 
 export default () => {
   const {
@@ -36,11 +35,7 @@ export default () => {
         <Styled.h3>Is there a Code of Conduct (CoC)?</Styled.h3>
         <Styled.p>
           Yes, by attending you are agreeing to the CoC. Details on the CoC can
-          be found{' '}
-          <NavLink as={Link} to="/coc">
-            here
-          </NavLink>
-          .
+          be found <Styled.a href="/coc">here</Styled.a>.
         </Styled.p>
         <Styled.h3>Who do I contact for CoC violations?</Styled.h3>
         <Styled.p>

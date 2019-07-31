@@ -3,12 +3,14 @@ import { Styled, css } from 'theme-ui';
 import { Box, Container } from 'theme-ui/layout';
 import useSiteMetadata from 'gatsby-theme-conference/src/use-site-metadata';
 import Button from 'gatsby-theme-conference/src/components/button';
+import NavLink from 'gatsby-theme-conference/src/components/nav-link';
+import { Link } from 'gatsby';
 
 export default (props) => {
   const { description } = useSiteMetadata();
 
   return (
-    <Box {...props} py={[5, 6]}>
+    <Box {...props} py={[5, 0]}>
       <Container
         css={css({
           display: 'flex',
@@ -37,10 +39,21 @@ export default (props) => {
           <Button href="https://www.eventbrite.com/e/undergroundjs-tickets-61081666910?aff=website">
             Buy Tickets
           </Button>
-          <Button href="https://forms.gle/8W92EGiu66pwUxCM7">
-            Scholarship
-          </Button>
+          <Button href="https://forms.gle/8W92EGiu66pwUxCM7">FAQ</Button>
         </div>
+      </Container>
+      <Container
+        css={css({
+          display: 'flex',
+          flexDirection: 'column',
+          textAlign: 'center',
+        })}
+      >
+        <Styled.h2>
+          <NavLink as={Link} to="/coc">
+            Code of Conduct
+          </NavLink>
+        </Styled.h2>
       </Container>
     </Box>
   );

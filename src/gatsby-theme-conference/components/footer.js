@@ -1,15 +1,15 @@
-import React from "react"
-import { Link } from "gatsby"
-import { Styled, css } from "theme-ui"
-import { Box, Flex, Container } from "theme-ui/layout"
-import { Twitter, Instagram } from "react-feather"
-import useSiteMetadata from "gatsby-theme-conference/src//use-site-metadata"
-import List from "gatsby-theme-conference/src/components/list"
-import NavLink from "gatsby-theme-conference/src/components/nav-link"
-import IconLink from "gatsby-theme-conference/src/components/icon-link"
+import React from 'react';
+import { Link } from 'gatsby';
+import { Styled, css } from 'theme-ui';
+import { Box, Flex, Container } from 'theme-ui/layout';
+import { Twitter, Instagram } from 'react-feather';
+import useSiteMetadata from 'gatsby-theme-conference/src//use-site-metadata';
+import List from 'gatsby-theme-conference/src/components/list';
+import NavLink from 'gatsby-theme-conference/src/components/nav-link';
+import IconLink from 'gatsby-theme-conference/src/components/icon-link';
 
-export default props => {
-  const { twitter, instagram } = useSiteMetadata()
+export default (props) => {
+  const { twitter, instagram } = useSiteMetadata();
 
   return (
     <Container>
@@ -58,16 +58,6 @@ export default props => {
                 About
               </NavLink>
             </li>
-            <li>
-              <NavLink as={Link} to="/become-a-sponsor">
-                Become a Sponsor
-              </NavLink>
-            </li>
-            {/* <li>
-              <NavLink as={Link} to="/scholarship">
-                Scholarship
-              </NavLink>
-            </li> */}
           </List>
         </Box>
         <Box width={[1, 1 / 3]} p={2}>
@@ -86,7 +76,7 @@ export default props => {
       <Box>
         <Styled.p
           css={css({
-            textAlign: "right",
+            textAlign: 'right',
             fontSize: 0,
           })}
         >
@@ -94,5 +84,5 @@ export default props => {
         </Styled.p>
       </Box>
     </Container>
-  )
-}
+  );
+};

@@ -2,6 +2,7 @@ import React from 'react';
 import { Styled, css } from 'theme-ui';
 import { Container } from 'theme-ui/layout';
 import Layout from 'gatsby-theme-conference/src/components/layout';
+import NavLink from 'gatsby-theme-conference/src/components/nav-link';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 
 export default () => {
@@ -35,7 +36,11 @@ export default () => {
         <Styled.h3>Is there a Code of Conduct (CoC)?</Styled.h3>
         <Styled.p>
           Yes, by attending you are agreeing to the CoC. Details on the CoC can
-          be found <Link to="/coc">here</Link>.
+          be found{' '}
+          <NavLink as={Link} to="/coc">
+            here
+          </NavLink>
+          .
         </Styled.p>
         <Styled.h3>Who do I contact for CoC violations?</Styled.h3>
         <Styled.p>
@@ -76,13 +81,13 @@ export default () => {
           .
         </Styled.p>
         <Styled.p>
-          Snack will be available throughout the day. We will also be providing
-          water to ensure everyone is well hydrated. Rocketown also, has a cafe
-          that will be open to purchase additional refreshments.
+          Snacks available throughout the day: peanuts, chips, granola & fruit
+          bars, fruit snacks, crackers, and ice pops! Along with water to stay
+          hydrated!
         </Styled.p>
         <Styled.p>
-          Snacks include: peanuts, chips, granola & fruit bars, fruit snacks,
-          crackers, and ice pops!
+          Rocketown also, has a cafe that will be open to purchase additional
+          refreshments.
         </Styled.p>
         <Styled.h3>What about dietary options?</Styled.h3>
         <Styled.p>

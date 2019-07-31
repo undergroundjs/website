@@ -1,10 +1,11 @@
 import React from 'react';
 import { Container } from 'theme-ui/layout';
 import { Styled } from 'theme-ui';
-import Layout from 'gatsby-theme-conference/src/components/layout';
 import { Link } from 'gatsby';
-import theme from '../gatsby-theme-conference/theme';
+import Layout from 'gatsby-theme-conference/src/components/layout';
+import NavLink from 'gatsby-theme-conference/src/components/nav-link';
 import Button from 'gatsby-theme-conference/src/components/button';
+import theme from '../gatsby-theme-conference/theme';
 
 const styles = {
   main: {
@@ -73,8 +74,11 @@ export default () => {
         </p>
 
         <p>
-          Visit our <Link to="about">about page</Link> to learn more about or
-          mission and meet our organizers
+          Visit our{' '}
+          <NavLink as={Link} to="about">
+            about page
+          </NavLink>{' '}
+          to learn more about or mission and meet our organizers
         </p>
 
         <Styled.h3>Here are a list of our sponsorship offerings:</Styled.h3>
@@ -111,7 +115,7 @@ export default () => {
               <th>Community</th>
             </tr>
             <tr>
-              <td></td>
+              <td />
               <td css={styles.highlight}>$7,000</td>
               <td>$3,000</td>
               <td>$1,000</td>
@@ -159,7 +163,7 @@ export default () => {
                   ️️✔️
                 </span>
               </td>
-              <td></td>
+              <td />
             </tr>
             <tr>
               <td>Branding on conference t-shirt</td>
@@ -173,8 +177,8 @@ export default () => {
                   ️️✔️
                 </span>
               </td>
-              <td></td>
-              <td></td>
+              <td />
+              <td />
             </tr>
             <tr>
               <td>Booth in conference hall</td>
@@ -188,8 +192,8 @@ export default () => {
                   ️️✔️
                 </span>
               </td>
-              <td></td>
-              <td></td>
+              <td />
+              <td />
             </tr>
             <tr>
               <td>Small table in conference hall</td>
@@ -208,7 +212,7 @@ export default () => {
                   ️️✔️
                 </span>
               </td>
-              <td></td>
+              <td />
             </tr>
             <tr>
               <td>Banner on stage</td>
@@ -217,9 +221,9 @@ export default () => {
                   ️️✔️
                 </span>
               </td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td />
+              <td />
+              <td />
             </tr>
             <tr>
               <td>Address conference attendees</td>
@@ -228,9 +232,9 @@ export default () => {
                   ️️✔️
                 </span>
               </td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td />
+              <td />
+              <td />
             </tr>
             <tr>
               <td>Scholarship tickets*</td>

@@ -32,7 +32,10 @@ export default () => {
           <Styled.a href="mailto:incidents@undergroundjs.com">
             incidents@undergroundjs.com
           </Styled.a>
-          .
+        </Styled.p>
+        <Styled.p>
+          Or, call or text us at{' '}
+          <Styled.a href="tel:901-295-8011">901-295-8011</Styled.a>
         </Styled.p>
 
         <Styled.h3>The Quick Version</Styled.h3>

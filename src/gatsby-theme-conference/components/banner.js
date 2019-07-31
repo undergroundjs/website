@@ -39,7 +39,7 @@ export default (props) => {
           <Button href="https://www.eventbrite.com/e/undergroundjs-tickets-61081666910?aff=website">
             Buy Tickets
           </Button>
-          <Button href="https://forms.gle/8W92EGiu66pwUxCM7">FAQ</Button>
+          <Button href="/faq">FAQ</Button>
         </div>
       </Container>
       <Container

@@ -28,6 +28,10 @@ export default (props) => {
         <NavLink as={Link} to="/#sponsors">
           Sponsors
         </NavLink>
+
+        <NavLink as={Link} to="/faq">
+          FAQ
+        </NavLink>
       </DesktopOnly>
       <Button href="https://www.eventbrite.com/e/undergroundjs-tickets-61081666910?aff=website">
         Buy Tickets

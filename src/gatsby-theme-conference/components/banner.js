@@ -50,7 +50,7 @@ export default (props) => {
         })}
       >
         <Styled.h2>
-          <NavLink as={Link} to="/coc">
+          <NavLink as={Link} to="/code-of-conduct">
             Code of Conduct
           </NavLink>
         </Styled.h2>

@@ -101,6 +101,8 @@ export default () => {
         <Styled.p>
           Please have you ticket ready, for a smooth check in process.
         </Styled.p>
+        <Styled.h3>Will there be Wifi?</Styled.h3>
+        <Styled.p>Yes, details will be provided at the event.</Styled.p>
 
         <Styled.h3>Have a question you don't see answered?</Styled.h3>
         <Styled.p>

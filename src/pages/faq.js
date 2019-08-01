@@ -35,7 +35,7 @@ export default () => {
         <Styled.h3>Is there a Code of Conduct (CoC)?</Styled.h3>
         <Styled.p>
           Yes, by attending you are agreeing to the CoC. Details on the CoC can
-          be found <Styled.a href="/coc">here</Styled.a>.
+          be found <Styled.a href="/code-of-conduct">here</Styled.a>.
         </Styled.p>
         <Styled.h3>Who do I contact for CoC violations?</Styled.h3>
         <Styled.p>

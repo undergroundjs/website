@@ -36,6 +36,9 @@ export default (props) => {
           {description}
         </Styled.p>
         <div css={{ display: 'flex', justifyContent: 'space-around' }}>
+          <Button href="https://docs.google.com/forms/d/e/1FAIpQLSeTaEpb2yzEBYIrdT6nd-2tIbe51AfYmp1sURysHVn1F9oSBw/viewform?usp=sf_link">
+            Give us Feedback
+          </Button>
           <Button href="https://www.eventbrite.com/e/undergroundjs-tickets-61081666910?aff=website">
             Buy Tickets
           </Button>

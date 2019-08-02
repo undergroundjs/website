@@ -57,6 +57,8 @@ export default () => {
           backside of {venue.title}, near the basketball courts. This area will
           be roped off to help direct you all there.
         </Styled.p>
+        <Styled.h3>Can I buy tickets at the door?</Styled.h3>
+        <Styled.p>Yes, we will be selling tickets at the door.</Styled.p>
         <Styled.h3>Where do I enter the event?</Styled.h3>
         <Styled.p>
           Coming from the parking lot, there is a set of double doors on ground

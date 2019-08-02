@@ -41,14 +41,6 @@ export default (props) => {
         <Box width={[1, 1 / 3]}>
           <List>
             <li>
-              <NavLink
-                as={Styled.a}
-                href="https://www.eventbrite.com/e/undergroundjs-tickets-61081666910?aff=website"
-              >
-                Tickets
-              </NavLink>
-            </li>
-            <li>
               <NavLink as={Link} to="/code-of-conduct">
                 Code of Conduct
               </NavLink>

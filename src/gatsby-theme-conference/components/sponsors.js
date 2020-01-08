@@ -8,24 +8,32 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 const IMAGESCALE = 0.68044;
 const platinumTierImageSizes = [360, 600, 740, 920];
-const imageScaler = (i, repeat) =>
-  repeat === 1 ? i * IMAGESCALE : imageScaler(i * IMAGESCALE, repeat - 1);
 
-const getBreakPointImageScale = (tier) => {
+const getBreakPointImageScale = (
+  tier,
+  { imageScale = IMAGESCALE, maxBreakpointSizes = platinumTierImageSizes }
+) => {
+  const imageScaler = (i, repeat) =>
+    repeat === 1 ? i * imageScale : imageScaler(i * imageScale, repeat - 1);
+
   switch (tier) {
     case 'platinum':
-      return platinumTierImageSizes;
+      return maxBreakpointSizes;
     case 'gold':
-      return platinumTierImageSizes.map((i) => imageScaler(i, 1));
+      return maxBreakpointSizes.map((i) => imageScaler(i, 1));
     case 'silver':
-      return platinumTierImageSizes.map((i) => imageScaler(i, 2));
+      return maxBreakpointSizes.map((i) => imageScaler(i, 2));
     case 'community':
     default:
-      return platinumTierImageSizes.map((i) => imageScaler(i, 3));
+      return maxBreakpointSizes.map((i) => imageScaler(i, 3));
   }
 };
 
-export default ({ sponsors = [] }) => {
+export default ({
+  sponsors = [],
+  imageScale = IMAGESCALE,
+  maxBreakpointSizes = platinumTierImageSizes,
+}) => {
   const data = useStaticQuery(graphql`
     query {
       allFile(filter: { extension: { eq: "svg" } }) {
@@ -58,7 +66,10 @@ export default ({ sponsors = [] }) => {
           }}
         >
           {sponsors.map((sponsor) => {
-            const breakPointImageScale = getBreakPointImageScale(sponsor.tier);
+            const breakPointImageScale = getBreakPointImageScale(sponsor.tier, {
+              imageScale,
+              maxBreakpointSizes,
+            });
             return (
               <Card
                 as="li"

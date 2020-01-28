@@ -16,24 +16,10 @@ export default (props) => {
       <Flex mx={-3} flexWrap="wrap">
         <Box width={[1, 1 / 3]}>
           <List>
+            <li>Archives</li>
             <li>
-              <NavLink as={Link} to="/speakers">
-                Speakers
-              </NavLink>
-            </li>
-            <li>
-              <NavLink as={Link} to="/schedule">
-                Schedule
-              </NavLink>
-            </li>
-            <li>
-              <NavLink as={Link} to="/#venue">
-                Venue
-              </NavLink>
-            </li>
-            <li>
-              <NavLink as={Link} to="/#sponsors">
-                Sponsors
+              <NavLink as={Link} to="/2019">
+                2019
               </NavLink>
             </li>
           </List>
@@ -43,11 +29,6 @@ export default (props) => {
             <li>
               <NavLink as={Link} to="/code-of-conduct">
                 Code of Conduct
-              </NavLink>
-            </li>
-            <li>
-              <NavLink as={Link} to="/about">
-                About
               </NavLink>
             </li>
           </List>

@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import { Styled, css } from 'theme-ui';
 import { Box, Container } from 'theme-ui/layout';
 import Layout from 'gatsby-theme-conference/src/components/layout';
+import NavLink from 'gatsby-theme-conference/src/components/nav-link';
 
 export default (props) => {
   return (
@@ -38,6 +40,22 @@ export default (props) => {
             })}
           >
             2020 details coming soon!
+          </Styled.h3>
+        </Container>
+      </Box>
+      <Box>
+        <Container>
+          <Styled.h3
+            css={css({
+              textAlign: 'center',
+            })}
+          >
+            <Styled.a
+              title="Call for Speakers"
+              href="https://sessionize.com/ugjs-2020"
+            >
+              CFP Now Open
+            </Styled.a>
           </Styled.h3>
         </Container>
       </Box>

@@ -57,6 +57,19 @@ export default (props) => {
               CFP Now Open
             </Styled.a>
           </Styled.h3>
+
+          <Styled.h3
+            css={css({
+              textAlign: 'center',
+            })}
+          >
+            <Styled.a
+              title="Tickets"
+              href="https://www.eventbrite.com/e/undergroundjs-2020-tickets-93439517111?aff=website"
+            >
+              Buy Tickets
+            </Styled.a>
+          </Styled.h3>
         </Container>
       </Box>
     </Layout>

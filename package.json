@@ -26,7 +26,7 @@
     "gatsby-plugin-google-analytics": "^2.1.35",
     "gatsby-plugin-netlify": "^2.1.32",
     "gatsby-plugin-offline": "^3.0.35",
-    "gatsby-theme-conference": "^0.1.1",
+    "gatsby-theme-conference": "^0.0.3",
     "jest": "^25.1.0",
     "netlify-lambda": "^1.4.13",
     "node-fetch": "^2.6.0",

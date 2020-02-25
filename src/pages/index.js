@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link } from 'gatsby';
+//import { Link } from 'gatsby';
 import { Styled, css } from 'theme-ui';
 import { Box, Container } from 'theme-ui/layout';
 import Layout from 'gatsby-theme-conference/src/components/layout';
-import NavLink from 'gatsby-theme-conference/src/components/nav-link';
+//import NavLink from 'gatsby-theme-conference/src/components/nav-link';
 
 export default (props) => {
   return (

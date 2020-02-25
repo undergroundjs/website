@@ -104,7 +104,7 @@ export default () => {
           <thead>
             <tr>
               <th>Benefit</th>
-              <th css={styles.highlight}>Platinum</th>
+              <th css={styles.highlight}>Platinum (Limit 1)</th>
               <th>Gold</th>
               <th>Silver</th>
               <th>Community</th>
@@ -118,29 +118,6 @@ export default () => {
             </tr>
           </thead>
           <tbody>
-          <tr>
-              <td>Limited to</td>
-              <td css={styles.highlight}>
-                <span role="img" aria-label="Benefit included">
-                  1
-                </span>
-              </td>
-              <td>
-                <span role="img" aria-label="Benefit included">
-                  3
-                </span>
-              </td>
-              <td>
-                <span role="img" aria-label="Benefit included">
-                  ️️5
-                </span>
-              </td>
-              <td>
-                <span role="img" aria-label="Benefit included">
-                  &#8734;
-                </span>
-              </td>
-            </tr>
             <tr>
               <td>Branding in conference media</td>
               <td css={styles.highlight}>
@@ -270,151 +247,6 @@ export default () => {
             </tr>
           </tbody>
         </table>
-
-        <Styled.h3>A La Carte Sponsorship Options</Styled.h3>
-        <table css={styles.main.table}>
-          <thead>
-            <tr>
-              <th>Benefit</th>
-              <th css={styles.highlight}>After Party</th>
-              <th>Lunch</th>
-              <th>VIP Gift</th>
-              <th>Lanyard</th>
-              <th>Badge</th>
-              <th>Coffee</th>
-            </tr>
-            <tr>
-              <td />
-              <td css={styles.highlight}>$5,000</td>
-              <td>$2,500</td>
-              <td>$1,500</td>
-              <td>$500</td>
-              <td>$500</td>
-              <td>$500</td>
-            </tr>
-          </thead>
-          <tbody>
-          <tr>
-              <td>Limited to</td>
-              <td css={styles.highlight}>
-                <span role="img" aria-label="Benefit included">
-                  1
-                </span>
-              </td>
-              <td css={styles.highlight}>
-                <span role="img" aria-label="Benefit included">
-                  1
-                </span>
-              </td>
-              <td css={styles.highlight}>
-                <span role="img" aria-label="Benefit included">
-                  1
-                </span>
-              </td>
-              <td css={styles.highlight}>
-                <span role="img" aria-label="Benefit included">
-                  1
-                </span>
-              </td>
-              <td css={styles.highlight}>
-                <span role="img" aria-label="Benefit included">
-                  1
-                </span>
-              </td>
-              <td css={styles.highlight}>
-                <span role="img" aria-label="Benefit included">
-                  1
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <td>Branding in conference media</td>
-              <td css={styles.highlight}>
-                <span role="img" aria-label="Benefit included">
-                  ️️✔️
-                </span>
-              </td>
-              <td>
-                <span role="img" aria-label="Benefit included">
-                  ️️✔️
-                </span>
-              </td>
-              <td>
-                <span role="img" aria-label="Benefit included">
-                  ️️✔️
-                </span>
-              </td>
-              <td>
-                <span role="img" aria-label="Benefit included">
-                  ️️✔️
-                </span>
-              </td>
-              <td>
-                <span role="img" aria-label="Benefit included">
-                  ️️✔️
-                </span>
-              </td>
-              <td>
-                <span role="img" aria-label="Benefit included">
-                  ️️✔️
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <td>Branding on t-shirt</td>
-              <td css={styles.highlight}>
-                <span role="img" aria-label="Benefit included">
-                  ️️✔️
-                </span>
-              </td>
-              <td>
-                <span role="img" aria-label="Benefit included">
-                  ️️✔️
-                </span>
-              </td>
-              <td>
-                <span role="img" aria-label="Benefit included">
-                  ️️✔️
-                </span>
-              </td>
-              <td />
-            </tr>
-            <tr>
-              <td>Conference tickets</td>
-              <td css={styles.highlight}>
-                <span role="img" aria-label="Benefit included">
-                  ️️2
-                </span>
-              </td>
-              <td>
-                <span role="img" aria-label="Benefit included">
-                  ️️2
-                </span>
-              </td>
-              <td>
-                <span role="img" aria-label="Benefit included">
-                  ️️1
-                </span>
-              </td>
-              <td>
-                <span role="img" aria-label="Benefit included">
-                  ️️1
-                </span>
-              </td>
-              <td>
-                <span role="img" aria-label="Benefit included">
-                  ️️1
-                </span>
-              </td>
-              <td>
-                <span role="img" aria-label="Benefit included">
-                  ️️1
-                </span>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
         <small>
           * A part of the sponsorship goes to provide free tickets to those in
           need.

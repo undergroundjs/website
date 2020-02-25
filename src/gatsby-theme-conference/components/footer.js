@@ -13,13 +13,16 @@ export default (props) => {
 
   return (
     <Container>
-      <Flex mx={-3} flexWrap="wrap">
+      <Flex mx={-3} flexWrap="wrap"
+        css={css({
+          textAlign: 'center',
+        })}
+      >
         <Box width={[1, 1 / 3]}>
           <List>
-            <li>Archives</li>
             <li>
               <NavLink as={Link} to="/2019">
-                2019
+                2019 Archive
               </NavLink>
             </li>
           </List>
@@ -49,7 +52,7 @@ export default (props) => {
       <Box>
         <Styled.p
           css={css({
-            textAlign: 'right',
+            textAlign: 'center',
             fontSize: 0,
           })}
         >

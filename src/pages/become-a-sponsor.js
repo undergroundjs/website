@@ -1,63 +1,12 @@
 import React from 'react';
-import { Container } from 'theme-ui/layout';
-import { Styled } from 'theme-ui';
-import Layout from 'gatsby-theme-conference/src/components/layout';
-import Button from 'gatsby-theme-conference/src/components/button';
-import theme from '../gatsby-theme-conference/theme';
-
-const styles = {
-  main: {
-    padding: '2rem 0',
-    fontSize: '1.4rem',
-    h2: {
-      margin: '2rem auto',
-    },
-    h3: {
-      margin: '2rem auto 1rem',
-    },
-    table: {
-      width: '100%',
-      borderCollapse: 'collapse',
-      marginTop: '1rem',
-      td: {
-        padding: '.5rem .2rem',
-      },
-      thead: {
-        td: {
-          textAlign: 'center',
-          fontStyle: 'italic',
-        },
-      },
-      tbody: {
-        tr: {
-          '&:nth-child(even)': {
-            td: {
-              backgroundColor: theme.colors.secondary,
-            },
-          },
-          td: {
-            textAlign: 'center',
-            '&:first-of-type': {
-              textAlign: 'left',
-            },
-          },
-        },
-      },
-    },
-    ul: {
-      marginLeft: '3rem',
-    },
-  },
-  highlight: {
-    backgroundColor: theme.colors.secondary,
-  },
-};
+import { Link } from 'gatsby';
+import Layout from '../components/layout'
 
 export default () => {
   return (
     <Layout>
-      <Container>
-        <Styled.h2>Sponsoring</Styled.h2>
+      <div>
+        <h2>Sponsoring</h2>
 
         <p>
           UndergroundJS will bring together 250 of Nashville's talented
@@ -72,11 +21,11 @@ export default () => {
         </p>
 
         <p>
-          Visit our <Styled.a href="/about">about page</Styled.a> to learn more
+          Visit our <a href="/about" component={Link} to="/about">about page</a> to learn more
           about or mission and meet our organizers
         </p>
 
-        <Styled.h3>Here are a list of our sponsorship offerings:</Styled.h3>
+        <h3>Here are a list of our sponsorship offerings:</  h3>
 
         <ul>
           <li>Booth (high-top, 4' or 6')</li>
@@ -87,7 +36,7 @@ export default () => {
           <li>Conference Tickets</li>
         </ul>
 
-        <Styled.h3>Exclusive Sponsorship Options:</Styled.h3>
+        <h3>Exclusive Sponsorship Options:</h3>
         <ul>
           <li>After party host</li>
           <li>Lunch or Breakfast</li>
@@ -99,19 +48,19 @@ export default () => {
           <li>Address attendees during opening remarks</li>
         </ul>
 
-        <Styled.h3>Sponsorship Tiers</Styled.h3>
-        <table css={styles.main.table}>
+        <h3>Sponsorship Tiers</h3>
+        <table>
           <thead>
             <tr>
               <th>Benefit</th>
-              <th css={styles.highlight}>Platinum (Limit 1)</th>
+              <th>Platinum (Limit 1)</th>
               <th>Gold</th>
               <th>Silver</th>
               <th>Community</th>
             </tr>
             <tr>
               <td />
-              <td css={styles.highlight}>$7,000</td>
+              <td>$7,000</td>
               <td>$3,000</td>
               <td>$1,000</td>
               <td>$0</td>
@@ -120,7 +69,7 @@ export default () => {
           <tbody>
             <tr>
               <td>Branding in conference media</td>
-              <td css={styles.highlight}>
+              <td>
                 <span role="img" aria-label="Benefit included">
                   ️️✔️
                 </span>
@@ -143,7 +92,7 @@ export default () => {
             </tr>
             <tr>
               <td>Banner in conference hall</td>
-              <td css={styles.highlight}>
+              <td>
                 <span role="img" aria-label="Benefit included">
                   ️️✔️
                 </span>
@@ -162,7 +111,7 @@ export default () => {
             </tr>
             <tr>
               <td>Branding on conference t-shirt</td>
-              <td css={styles.highlight}>
+              <td>
                 <span role="img" aria-label="Benefit included">
                   ️️✔️
                 </span>
@@ -177,7 +126,7 @@ export default () => {
             </tr>
             <tr>
               <td>Booth in conference hall</td>
-              <td css={styles.highlight}>
+              <td>
                 <span role="img" aria-label="Benefit included">
                   ️️✔️
                 </span>
@@ -192,7 +141,7 @@ export default () => {
             </tr>
             <tr>
               <td>Small table in conference hall</td>
-              <td css={styles.highlight}>
+              <td>
                 <span role="img" aria-label="Benefit included">
                   ️️
                 </span>
@@ -211,7 +160,7 @@ export default () => {
             </tr>
             <tr>
               <td>Banner on stage</td>
-              <td css={styles.highlight}>
+              <td>
                 <span role="img" aria-label="Benefit included">
                   ️️✔️
                 </span>
@@ -222,7 +171,7 @@ export default () => {
             </tr>
             <tr>
               <td>Address conference attendees</td>
-              <td css={styles.highlight}>
+              <td>
                 <span role="img" aria-label="Benefit included">
                   ️️✔️
                 </span>
@@ -233,14 +182,14 @@ export default () => {
             </tr>
             <tr>
               <td>Scholarship tickets*</td>
-              <td css={styles.highlight}>3</td>
+              <td>3</td>
               <td>2</td>
               <td>1</td>
               <td>0</td>
             </tr>
             <tr>
               <td>Conference tickets</td>
-              <td css={styles.highlight}>4</td>
+              <td>4</td>
               <td>3</td>
               <td>2</td>
               <td>0</td>
@@ -256,10 +205,10 @@ export default () => {
           your business. To find out more email us.
         </p>
 
-        <Button href="mailto:chair@undergroundjs.com?subject=Sponsorship">
+        <a href="mailto:chair@undergroundjs.com?subject=Sponsorship" component={Link} to="/about">
           Contact Us
-        </Button>
-      </Container>
+        </a>
+      </div>
     </Layout>
   );
 };

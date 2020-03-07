@@ -88,7 +88,7 @@ export default () => {
           workshop venues and conference-related social events.
         </p>
         <p>
-          This Code of Conduct is borrowed from{' '}
+          <b>This Code of Conduct is borrowed from{' '}</b>
           <a href="http://confcodeofconduct.com/" component={Link} to="http://confcodeofconduct.com/">
             Conference Code of Conduct
           </a>

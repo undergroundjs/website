@@ -13,13 +13,13 @@ export default () => {
         <h3>Is there a Code of Conduct (CoC)?</h3>
         <p>
           Yes, by attending you are agreeing to the CoC. Details on the CoC can
-          be found <a href="/code-of-conduct" component={Link} to="/code-of-conduct">here</ a>.
+          be found <a href="/code-of-conduct" component={Link} to="/code-of-conduct">here</a>.
         </p>
         <h3>Who do I contact for CoC violations?</ h3>
         <p>
           We take these incidents very seriously, contact us via{' '}
           <a href="mailto:incidents@undergroundjs.com" component={Link} to="/mailto:incidents@undergroundjs.com">email</a>{' '}
-          or by phone <a href="tel:901-295-8011" component={Link} to="tel:901-295-8011">901-295-8011</ a>.
+          or by phone <a href="tel:901-295-8011" component={Link} to="tel:901-295-8011">901-295-8011</a>.
         </p>
         <h3>Where is the event?</h3>
         <p>

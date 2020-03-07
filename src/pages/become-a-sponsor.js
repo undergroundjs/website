@@ -49,18 +49,18 @@ export default () => {
         </ul>
 
         <h3>Sponsorship Tiers</h3>
-        <table>
-          <thead>
+        <table className="col-lg-12" style={{ textAlign: 'center' }}>
+          <thead> 
             <tr>
               <th>Benefit</th>
-              <th>Platinum (Limit 1)</th>
+              <th className="highlight">Platinum (Limit 1)</th>
               <th>Gold</th>
               <th>Silver</th>
               <th>Community</th>
             </tr>
             <tr>
               <td />
-              <td>$7,000</td>
+              <td className="highlight">$7,000</td>
               <td>$3,000</td>
               <td>$1,000</td>
               <td>$0</td>
@@ -68,8 +68,8 @@ export default () => {
           </thead>
           <tbody>
             <tr>
-              <td>Branding in conference media</td>
-              <td>
+              <td style={{ textAlign: 'left' }}>Branding in conference media</td>
+              <td className="highlight">
                 <span role="img" aria-label="Benefit included">
                   ️️✔️
                 </span>
@@ -90,8 +90,8 @@ export default () => {
                 </span>
               </td>
             </tr>
-            <tr>
-              <td>Banner in conference hall</td>
+            <tr className="highlight">
+              <td style={{ textAlign: 'left' }}>Banner in conference hall</td>
               <td>
                 <span role="img" aria-label="Benefit included">
                   ️️✔️
@@ -110,7 +110,22 @@ export default () => {
               <td />
             </tr>
             <tr>
-              <td>Branding on conference t-shirt</td>
+              <td style={{ textAlign: 'left' }}>Branding on conference t-shirt</td>
+              <td className="highlight">
+                <span role="img" aria-label="Benefit included">
+                  ️️✔️
+                </span>
+              </td>
+              <td>
+                <span role="img" aria-label="Benefit included">
+                  ️️✔️
+                </span>
+              </td>
+              <td />
+              <td />
+            </tr>
+            <tr className="highlight">
+              <td style={{ textAlign: 'left' }}>Booth in conference hall</td>
               <td>
                 <span role="img" aria-label="Benefit included">
                   ️️✔️
@@ -125,23 +140,8 @@ export default () => {
               <td />
             </tr>
             <tr>
-              <td>Booth in conference hall</td>
-              <td>
-                <span role="img" aria-label="Benefit included">
-                  ️️✔️
-                </span>
-              </td>
-              <td>
-                <span role="img" aria-label="Benefit included">
-                  ️️✔️
-                </span>
-              </td>
-              <td />
-              <td />
-            </tr>
-            <tr>
-              <td>Small table in conference hall</td>
-              <td>
+              <td style={{ textAlign: 'left' }}>Small table in conference hall</td>
+              <td className="highlight">
                 <span role="img" aria-label="Benefit included">
                   ️️
                 </span>
@@ -158,8 +158,8 @@ export default () => {
               </td>
               <td />
             </tr>
-            <tr>
-              <td>Banner on stage</td>
+            <tr className="highlight">
+              <td style={{ textAlign: 'left' }}>Banner on stage</td>
               <td>
                 <span role="img" aria-label="Benefit included">
                   ️️✔️
@@ -170,8 +170,8 @@ export default () => {
               <td />
             </tr>
             <tr>
-              <td>Address conference attendees</td>
-              <td>
+              <td style={{ textAlign: 'left' }}>Address conference attendees</td>
+              <td className="highlight">
                 <span role="img" aria-label="Benefit included">
                   ️️✔️
                 </span>
@@ -180,16 +180,16 @@ export default () => {
               <td />
               <td />
             </tr>
-            <tr>
-              <td>Scholarship tickets*</td>
+            <tr className="highlight">
+              <td style={{ textAlign: 'left' }}>Scholarship tickets*</td>
               <td>3</td>
               <td>2</td>
               <td>1</td>
               <td>0</td>
             </tr>
             <tr>
-              <td>Conference tickets</td>
-              <td>4</td>
+              <td style={{ textAlign: 'left' }}>Conference tickets</td>
+              <td className="highlight">4</td>
               <td>3</td>
               <td>2</td>
               <td>0</td>
@@ -205,7 +205,7 @@ export default () => {
           your business. To find out more email us.
         </p>
 
-        <a href="mailto:chair@undergroundjs.com?subject=Sponsorship" component={Link} to="/about">
+        <a className="btn btn-primary" href="mailto:chair@undergroundjs.com?subject=Sponsorship" component={Link} to="/about">
           Contact Us
         </a>
       </div>

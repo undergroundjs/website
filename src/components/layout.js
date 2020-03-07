@@ -1,12 +1,13 @@
 import React from 'react';
 import Header from './header';
 import Footer from './footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Layout = (props) => {
     return (
-        <div className="container">
+        <div>
             <Header />
-            <div className="content">
+            <div className="container">
                 {props.children}
             </div>
             <Footer />

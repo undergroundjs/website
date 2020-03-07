@@ -13,6 +13,17 @@
     flex-direction: column;
     justify-content: space-evenly;
 
+    a {
+        color: #000000;
+        text-decoration: none;
+        font-weight: 600;
+        white-space: nowrap;
+        &:hover {
+            cursor: pointer;
+            color: $secondary;  
+        }
+      }
+
     .footerMenu {
         box-sizing: border-box;
         min-width: 0;

@@ -50,6 +50,8 @@ Examle: 01_Update_README
 
 There must be a Pull Request or every change to repo.
 
+#### Note: Make sure you compare the nashvillefcc/UndergroundJS-Website Master Branch to Your Branch
+
 Assign [Hellrungj](https://github.com/Hellrungj) as Pull Request Reviewer
 
 ---

@@ -23,21 +23,26 @@ const Header = () => {
       //     </ul>
       //   </nav>
       // </header>
-        <Navbar class="navbar" expand="sm">
-          <Navbar.Brand href="#home">
+        <Navbar bg="dark" expand="lg">
+          <Navbar.Brand class="navbarTitle" href="#home">
             <img
-              src="..\..\images\ugjs-square.jpg"
-              with="30"
-              height="30"
-              className="d-inline-block align-top"
+              src={require('../images/ugjs-square.jpg')}
+              width="70"
+              height="70"
+              // className="d-inline-block align-top"
               alt="Underground JS Logo"
               />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link href="/">Home</Nav.Link>
+              <Nav.Link href="/about">About</Nav.Link>
+              <Nav.Link href="/speakers">Speakers</Nav.Link>
+              <Nav.Link href="/venue">Venue</Nav.Link>
+              <Nav.Link href="/become-a-sponsor">Sponsors</Nav.Link>
+              <Nav.Link href="/faq">FAQ</Nav.Link>
+              <Nav.Link href="/contact">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

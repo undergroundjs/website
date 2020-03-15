@@ -2,7 +2,8 @@ import React from "react"
 import { Navbar, NavDropdown, Form, FormControl, Button, Nav } from "react-bootstrap";
 import { Link } from "gatsby"
 
-const Header = () => {
+class Header extends React.Component {
+  render() {
     return (
       // <header class="navbar">
       //   <a href="/" component={Link} to="/" class="navbarTitle">
@@ -23,7 +24,7 @@ const Header = () => {
       //     </ul>
       //   </nav>
       // </header>
-        <Navbar bg="dark" expand="lg">
+        <Navbar className="navbar" expand="lg">
           <Navbar.Brand class="navbarTitle" href="#home">
             <img
               src={require('../images/ugjs-square.jpg')}
@@ -35,19 +36,90 @@ const Header = () => {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/about">About</Nav.Link>
-              <Nav.Link href="/speakers">Speakers</Nav.Link>
-              <Nav.Link href="/venue">Venue</Nav.Link>
-              <Nav.Link href="/become-a-sponsor">Sponsors</Nav.Link>
-              <Nav.Link href="/faq">FAQ</Nav.Link>
-              <Nav.Link href="/contact">Contact</Nav.Link>
+            <Nav className="ml-auto">
+              <Link 
+              to="/"
+              activeStyle={{
+                color: "red",
+              }}
+              ref={el => {
+                this.myLink = el
+              }}
+                >
+                  Home
+              </Link>
+              <Link 
+              to="/about"
+              activeStyle={{
+                color: "red",
+              }}
+              ref={el => {
+                this.myLink = el
+              }}
+                >
+                  About
+              </Link>
+              <Link 
+              to="/speakers"
+              activeStyle={{
+                color: "red",
+              }}
+              ref={el => {
+                this.myLink = el
+              }}
+                >
+                  Speakers
+              </Link>
+              <Link 
+              to="/venue"
+              activeStyle={{
+                color: "red",
+              }}
+              ref={el => {
+                this.myLink = el
+              }}
+                >
+                  Venue
+              </Link>
+              <Link 
+              to="/sponsors"
+              activeStyle={{
+                color: "red",
+              }}
+              ref={el => {
+                this.myLink = el
+              }}
+                >
+                  Sponsors
+              </Link>
+              <Link 
+              to="/faq"
+              activeStyle={{
+                color: "red",
+              }}
+              ref={el => {
+                this.myLink = el
+              }}
+                >
+                  FAQ
+              </Link>
+              <Link 
+              to="/contact"
+              activeStyle={{
+                color: "red",
+              }}
+              ref={el => {
+                this.myLink = el
+              }}
+                >
+                  Contact
+              </Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
     )
   }
+}
   
   export default Header
   

@@ -9,13 +9,16 @@ $fontColor: #555555;
 $horizontalLine: #F58704;
 $backgroundColor: #FFFFFF;
 
-$darkGray: #555555;
-$lightGray: #DDDDDD;
+$charcoal: #555555;
+$darkGray: #CCCCCC;
+$midGray: #DDDDDD;
+$lightGray: #EEEEEE;
+
 $footerColor: #000000;
 $orange: #F48705;
 $yellow: #F5B005;
 $MainHeadlineFont: 'Ceviche One', cursive;
-$SecondaryFont: 'Staatliches', cursive;
+$HeaderFont: 'Staatliches', cursive; // Should only by used in h1
 $BodyFont: 'Oswald', sans-serif;
 
 * {

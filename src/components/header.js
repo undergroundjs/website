@@ -34,7 +34,7 @@ class Header extends React.Component {
         <Navbar className="navbar" expand="lg" sticky="top">
           <Navbar.Brand class="navbarTitle" href="#home">
             <img
-              src={require('../images/ugjs-square.jpg')}
+              src={require('../images/ugjs-logo-sm-color.png')}
               width="70"
               height="70"
               // className="d-inline-block align-top"
@@ -42,7 +42,7 @@ class Header extends React.Component {
               />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Collapse id="basic-navbar-nav navbarTitle">
             <Nav className="ml-auto">
             <Nav.Link>
               <Link 

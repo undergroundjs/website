@@ -12,8 +12,6 @@
     padding-bottom: 8px;
     overflow-x: auto;
     background-color: #555555;
-    color: #FFFFFF;
-    font-family: 'Oswald', sans-serif;
 
     .navbarTitle {
         font-family: 'Oswald',sans-serif;
@@ -34,9 +32,19 @@
           }
     }
 
-    .show {
+    .show, .collapsing {
         background-color: #FFFFFF;
         text-align: center;
-        font-weight: 1200;
     }
+    
+    .show .nav-link .navbarTitle {
+        color: #555555;
+
+        &:hover {
+            cursor: pointer;
+            color: $secondary;
+        }
+    }
+    
+    
 }

@@ -1,54 +1,33 @@
 import React from "react"
 import { Navbar, NavDropdown, Form, FormControl, Button, Nav } from "react-bootstrap";
 import { Link } from "gatsby";
-import { element } from "prop-types";
 
 class Header extends React.Component {
   
-  dropdown = () => {
-       const navEle = element.getElementByClassName('navbar')
-       navEle.classList.add("verticalNavbar")
-  }
-
   render() {
     return (
-      // <header class="navbar">
-      //   <a href="/" component={Link} to="/" class="navbarTitle">
-      //     UndergroundJS
-      //   </a>
-      //   <nav>
-      //     <ul>
-      //       <li>
-      //         <Link to="/about">
-      //           About
-      //         </Link>
-      //       </li>
-      //       <li>
-      //         <Link to="/contact">
-      //           Contact
-      //         </Link>
-      //       </li>
-      //     </ul>
-      //   </nav>
-      // </header>
         <Navbar className="navbar" expand="lg" sticky="top">
           <Navbar.Brand class="navbarTitle" href="#home">
             <img
               src={require('../images/ugjs-logo-sm-color.png')}
-              width="70"
               height="70"
-              // className="d-inline-block align-top"
               alt="Underground JS Logo"
               />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-          <Navbar.Collapse id="basic-navbar-nav navbarTitle">
+          <Navbar.Toggle aria-controls="basic-navbar-nav">
+            <div id="hamburgerButton">
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>	
+            </div>
+          </Navbar.Toggle>
+          <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
             <Nav.Link>
               <Link 
               to="/"
               activeStyle={{
-                color: "red",
+                color: "#f48705",
               }}
               ref={el => {
                 this.myLink = el
@@ -62,7 +41,7 @@ class Header extends React.Component {
               <Link 
               to="/about"
               activeStyle={{
-                color: "red",
+                color: "#f48705",
               }}
               ref={el => {
                 this.myLink = el
@@ -76,7 +55,7 @@ class Header extends React.Component {
               <Link 
               to="/speakers"
               activeStyle={{
-                color: "red",
+                color: "#f48705",
               }}
               ref={el => {
                 this.myLink = el
@@ -90,7 +69,7 @@ class Header extends React.Component {
               <Link 
               to="/venue"
               activeStyle={{
-                color: "red",
+                color: "#f48705",
               }}
               ref={el => {
                 this.myLink = el
@@ -104,7 +83,7 @@ class Header extends React.Component {
               <Link 
               to="/sponsors"
               activeStyle={{
-                color: "red",
+                color: "#f48705",
               }}
               ref={el => {
                 this.myLink = el
@@ -118,7 +97,7 @@ class Header extends React.Component {
               <Link 
               to="/faq"
               activeStyle={{
-                color: "red",
+                color: "#f48705",
               }}
               ref={el => {
                 this.myLink = el
@@ -132,7 +111,7 @@ class Header extends React.Component {
               <Link 
               to="/contact"
               activeStyle={{
-                color: "red",
+                color: "#f48705",
               }}
               ref={el => {
                 this.myLink = el

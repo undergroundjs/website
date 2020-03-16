@@ -18,13 +18,15 @@
         line-height: 1.5;
         color: #FFFFFF;
         text-decoration: none;
-        font-weight: 600;
+        font-weight: 200;
+        font-size: 2vw;
         white-space: nowrap;
         flex: none;
         padding-left: 16px;
         padding-right: 16px;
         padding-top: 8px;
         padding-bottom: 8px;
+        
     
         &:hover {
             cursor: pointer;
@@ -32,19 +34,76 @@
           }
     }
 
+
+    //Begin expanding mobile menu
+
     .show, .collapsing {
         background-color: #FFFFFF;
         text-align: center;
     }
     
-    .show .nav-link .navbarTitle {
+    .show .nav-link .navbarTitle, .collapsing .nav-link .navbarTitle {
         color: #555555;
+        border-bottom: $primary 3px solid;
+        font-size: 4vw;
 
         &:hover {
             cursor: pointer;
             color: $secondary;
         }
     }
+
+    .navbar-nav :last-child .navbarTitle {
+        border-bottom: hidden;
+    }
+
+
+    //End mobile menu
+
+    //Begin hamburger to X animation
+
+    .icon-bar {
+        width: 22px; 
+        height: 2px;
+        background-color: #B6B6B6;
+        display: block;
+        transition: all 0.2s;
+        margin-top: 4px
+    }
+     
+    .navbar-toggler {
+      border: none !important;
+      background: transparent !important;
+    }
+
+    .navbar-toggler .top-bar {
+        transform: rotate(45deg);
+        transform-origin: 10% 10%;
+      }
+       
+      .navbar-toggler .middle-bar {
+        opacity: 0;
+      }
+       
+      .navbar-toggler .bottom-bar {
+        transform: rotate(-45deg);
+        transform-origin: 10% 90%;
+      }
+       
+      .navbar-toggler.collapsed .top-bar {
+        transform: rotate(0);
+      }
+       
+      .navbar-toggler.collapsed .middle-bar {
+        opacity: 1;
+      }
+       
+      .navbar-toggler.collapsed .bottom-bar {
+        transform: rotate(0);
+      }
+
+      //End hamburger to X animation.
+
     
     
 }

@@ -1,8 +1,15 @@
 import React from "react"
 import { Navbar, NavDropdown, Form, FormControl, Button, Nav } from "react-bootstrap";
 import { Link } from "gatsby";
+import { element } from "prop-types";
 
 class Header extends React.Component {
+  
+  dropdown = () => {
+       const navEle = element.getElementByClassName('navbar')
+       navEle.classList.add("verticalNavbar")
+  }
+
   render() {
     return (
       // <header class="navbar">
@@ -34,7 +41,7 @@ class Header extends React.Component {
               alt="Underground JS Logo"
               />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle aria-controls="basic-navbar-nav"/>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
             <Nav.Link>
@@ -48,7 +55,7 @@ class Header extends React.Component {
               }}
               className = "navbarTitle"
                 >
-                  Home
+                  home
               </Link>
               </Nav.Link>
               <Nav.Link>
@@ -62,7 +69,7 @@ class Header extends React.Component {
               }}
               className = "navbarTitle"
                 >
-                  About
+                  about
               </Link>
               </Nav.Link>
               <Nav.Link>
@@ -76,7 +83,7 @@ class Header extends React.Component {
               }}
               className = "navbarTitle"
                 >
-                  Speakers
+                  speakers
               </Link>
               </Nav.Link>
               <Nav.Link>
@@ -90,7 +97,7 @@ class Header extends React.Component {
               }}
               className = "navbarTitle"
                 >
-                  Venue
+                  venue
               </Link>
               </Nav.Link>
               <Nav.Link>
@@ -104,7 +111,7 @@ class Header extends React.Component {
               }}
               className = "navbarTitle"
                 >
-                  Sponsors
+                  sponsors
               </Link>
               </Nav.Link>
               <Nav.Link>
@@ -118,7 +125,7 @@ class Header extends React.Component {
               }}
               className = "navbarTitle"
                 >
-                  FAQ
+                  faq
               </Link>
               </Nav.Link>
               <Nav.Link>
@@ -132,7 +139,7 @@ class Header extends React.Component {
               }}
               className = "navbarTitle"
                 >
-                  Contact
+                  contact
               </Link>
               </Nav.Link>
             </Nav>

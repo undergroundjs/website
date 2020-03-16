@@ -1,6 +1,6 @@
 import React from "react"
 import { Navbar, NavDropdown, Form, FormControl, Button, Nav } from "react-bootstrap";
-import { Link } from "gatsby"
+import { Link } from "gatsby";
 
 class Header extends React.Component {
   render() {
@@ -24,7 +24,7 @@ class Header extends React.Component {
       //     </ul>
       //   </nav>
       // </header>
-        <Navbar className="navbar" expand="lg">
+        <Navbar className="navbar" expand="lg" sticky="top">
           <Navbar.Brand class="navbarTitle" href="#home">
             <img
               src={require('../images/ugjs-square.jpg')}
@@ -37,6 +37,7 @@ class Header extends React.Component {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
+            <Nav.Link>
               <Link 
               to="/"
               activeStyle={{
@@ -45,9 +46,12 @@ class Header extends React.Component {
               ref={el => {
                 this.myLink = el
               }}
+              className = "navbarTitle"
                 >
                   Home
               </Link>
+              </Nav.Link>
+              <Nav.Link>
               <Link 
               to="/about"
               activeStyle={{
@@ -56,9 +60,12 @@ class Header extends React.Component {
               ref={el => {
                 this.myLink = el
               }}
+              className = "navbarTitle"
                 >
                   About
               </Link>
+              </Nav.Link>
+              <Nav.Link>
               <Link 
               to="/speakers"
               activeStyle={{
@@ -67,9 +74,12 @@ class Header extends React.Component {
               ref={el => {
                 this.myLink = el
               }}
+              className = "navbarTitle"
                 >
                   Speakers
               </Link>
+              </Nav.Link>
+              <Nav.Link>
               <Link 
               to="/venue"
               activeStyle={{
@@ -78,9 +88,12 @@ class Header extends React.Component {
               ref={el => {
                 this.myLink = el
               }}
+              className = "navbarTitle"
                 >
                   Venue
               </Link>
+              </Nav.Link>
+              <Nav.Link>
               <Link 
               to="/sponsors"
               activeStyle={{
@@ -89,9 +102,12 @@ class Header extends React.Component {
               ref={el => {
                 this.myLink = el
               }}
+              className = "navbarTitle"
                 >
                   Sponsors
               </Link>
+              </Nav.Link>
+              <Nav.Link>
               <Link 
               to="/faq"
               activeStyle={{
@@ -100,9 +116,12 @@ class Header extends React.Component {
               ref={el => {
                 this.myLink = el
               }}
+              className = "navbarTitle"
                 >
                   FAQ
               </Link>
+              </Nav.Link>
+              <Nav.Link>
               <Link 
               to="/contact"
               activeStyle={{
@@ -111,9 +130,11 @@ class Header extends React.Component {
               ref={el => {
                 this.myLink = el
               }}
+              className = "navbarTitle"
                 >
                   Contact
               </Link>
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

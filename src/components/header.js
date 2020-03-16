@@ -6,7 +6,7 @@ class Header extends React.Component {
   
   render() {
     return (
-        <Navbar className="navbar" expand="lg" sticky="top">
+        <Navbar expand="lg" sticky="top">
           <Navbar.Brand class="navbarTitle" href="#home">
             <img
               src={require('../images/ugjs-logo-sm-color.png')}

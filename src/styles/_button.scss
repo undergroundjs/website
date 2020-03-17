@@ -1,0 +1,21 @@
+
+
+.btn--light {
+    background: white;
+    border: black solid 3px;
+    color: black;
+    text-transform: uppercase;
+    &:hover {
+        background-color:  lightgrey;
+    }
+}
+
+.btn--dark {
+    background: grey;
+    border:white solid 3px;
+    color: white;
+    text-transform: uppercase;
+    &:hover {
+        background-color:  lightgray;
+    }
+}

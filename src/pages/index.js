@@ -15,8 +15,8 @@ export default () => {
               JavaScript conference hosted in Nashville.
           </h1>
           <div className="cta">
-              <Button>Speakers</Button>
-              <Button>Buy Tickets</Button>
+              <Button buttonStyle="btn-light">Speakers</Button>
+              <Button buttonStyle="btn-dark">Buy Tickets</Button>
           </div>
       </div>
       <div className="speakers col-lg-12">

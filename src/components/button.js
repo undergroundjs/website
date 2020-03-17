@@ -3,10 +3,19 @@ import { Link } from 'gatsby';
 import '../styles/index.scss'
 
 
+// When using this component the user needs to set buttonStyle to either 'btn-light' or 'btn-dark'
+
+const STYLES = [
+    "btn-light",
+    "btn-dark"
+]
 
 const Button = ({
-    children
+    children,
+    buttonStyle
 }) => {
+
+    const checkBtnStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
 
     const lowerCaseChildren = children.toLowerCase();
     
@@ -25,7 +34,7 @@ const Button = ({
         };
 
         return (
-            <a className="btn btn-primary" href={`${createPath()}`} component={Link} to={`${createPath()}`}>
+            <a className={`${checkBtnStyle}`} href={`${createPath()}`} component={Link} to={`${createPath()}`}>
             {children}
             </a>
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Twitter } from 'react-feather';
+import '../images/ugjs-logo-sm.png';
 
 const Footer = () => {
   return (
@@ -12,6 +13,7 @@ const Footer = () => {
               2019 Archive
             </a>
           </ul>
+          <img src="../images/ugjs-logo-sm.png" alt="ugjs-logo-sm" />
         </div>
         <div class="pages">
           <ul>

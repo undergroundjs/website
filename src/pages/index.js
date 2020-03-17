@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import { Card } from 'react-bootstrap'
 import { Twitter, GitHub } from 'react-feather';
 import Layout from '../components/layout'
@@ -16,13 +15,8 @@ export default () => {
               JavaScript conference hosted in Nashville.
           </h1>
           <div className="cta">
-              {/* <a className="btn btn-primary" href="https://sessionize.com/ugjs-2020" component={Link} to="https://sessionize.com/ugjs-2020">
-                  Call for Speakers
-              </a> */}
               <Button>Speakers</Button>
-              <a className="btn btn-primary" href="https://www.eventbrite.com/e/undergroundjs-2020-tickets-93439517111?aff=website" component={Link} to="https://www.eventbrite.com/e/undergroundjs-2020-tickets-93439517111?aff=website">
-                  Buy Tickets
-              </a>
+              <Button>Buy Tickets</Button>
           </div>
       </div>
       <div className="speakers col-lg-12">

@@ -38,6 +38,7 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-offline',
     'gatsby-plugin-netlify', // make sure to keep it last in the array
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-sass`,
     },

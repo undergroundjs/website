@@ -1,25 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Ceviche+One|Oswald|Staatliches&display=swap');
+
+// Fonts:
+$MainHeadlineFont: 'Ceviche One', cursive;
+$HeaderFont: 'Staatliches', cursive; // Should only by used in h1
+$BodyFont: 'Oswald', sans-serif;
+
+// Colors: 
 $primary: #f48705;
 $secondary: #f5b004;
 $muted: #f6eeff;
-
-$fontsBody: 400;
-$fontBold: 600;
-$fontHeading: 900;
 $fontColor: #555555;
 $horizontalLine: #F58704;
 $backgroundColor: #FFFFFF;
-
 $charcoal: #555555;
 $darkGray: #CCCCCC;
 $midGray: #DDDDDD;
 $lightGray: #EEEEEE;
-
 $footerColor: #000000;
 $orange: #F48705;
 $yellow: #F5B005;
-$MainHeadlineFont: 'Ceviche One', cursive;
-$HeaderFont: 'Staatliches', cursive; // Should only by used in h1
-$BodyFont: 'Oswald', sans-serif;
+
+// Font-Weights:
+$fontsBody: 400;
+$fontBold: 600;
+$fontHeading: 900;
+
+// Font-Sizes:
+$text-xs: .75rem;
+$text-sm: .875rem;
+$text-base: 1rem;
+$text-lg: 1.125rem;
+$text-xl: 1.25rem;
+$text-2xl: 1.5rem;
+$text-3xl: 1.875rem;
+$text-4xl: 2.25rem;
+$text-5xl: 3rem;
+$text-6xl: 4rem;
 
 * {
     margin: 0;
@@ -27,32 +43,6 @@ $BodyFont: 'Oswald', sans-serif;
     box-sizing: border-box;
     font-family: system-ui;
   }
-
-h1, h2, h3, h4 {
-  font-family: inherit;
-  line-height: 1.25;
-  font-weight: 900;
-}
-
-h1, h2 {
-  color: $primary;
-}
-
-
-h1{
-  font-size: 64px;
-}
-h2{
-  font-size: 48px;
-}
-h3 {
-  font-size: 24px;
-}
-
-h4 {
-  font-size: 20px;
-  margin: 0px 0px 64px;
-}
 
 a {
   color: $primary;

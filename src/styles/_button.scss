@@ -1,21 +1,33 @@
+@import 'base';
 
-
-.btn--light {
-    background: white;
-    border: black solid 3px;
-    color: black;
+.btn-light {
+    background: $muted;
+    font: $HeaderFont;
+    border: 1px solid black;
+    color: darkslategray;
     text-transform: uppercase;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 0.25rem;
     &:hover {
-        background-color:  lightgrey;
+        background-color: $darkGray;
     }
 }
 
-.btn--dark {
-    background: grey;
-    border:white solid 3px;
-    color: white;
+.btn-dark {
+    background: $charcoal;
+    border: 1px solid $muted;
+    color: $muted;
     text-transform: uppercase;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 0.25rem;
     &:hover {
-        background-color:  lightgray;
+        background-color:  $darkGray;
+        color: black;
     }
 }

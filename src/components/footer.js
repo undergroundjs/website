@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Twitter } from 'react-feather';
-import '../images/ugjs-logo-sm.png';
+import UgjsLogo from '../images/ugjs-logo-sm.png';
+
+console.log("alskdjfa;d", UgjsLogo)
 
 const Footer = () => {
   return (
@@ -13,7 +15,7 @@ const Footer = () => {
               2019 Archive
             </a>
           </ul>
-          <img src="../images/ugjs-logo-sm.png" alt="ugjs-logo-sm" />
+          <img src={UgjsLogo} alt="UgjsLogo" />
         </div>
         <div class="pages">
           <ul>
@@ -63,5 +65,6 @@ const Footer = () => {
     </footer>
   );
 };
+
 
 export default Footer;

@@ -15,7 +15,7 @@ const Footer = () => {
               2019 Archive
             </a>
           </ul>
-          <img src={UgjsLogo} alt="UgjsLogo" />
+          <img className="footerLogo" src={UgjsLogo} alt="UgjsLogo" />
         </div>
         <div class="pages">
           <ul>

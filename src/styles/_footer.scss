@@ -49,6 +49,9 @@
         .archive {
             width: 33.33333333333333%;
             text-align: center;
+            min-height: 200px;
+            vertical-align: middle;
+
         }
 
         .pages {
@@ -59,6 +62,10 @@
         .social {
             width: 33.33333333333333%;
             text-align: center;
+        }
+        .footerLogo {
+            width: 50%;
+
         }
     }
 }

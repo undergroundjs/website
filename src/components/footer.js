@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { Twitter } from 'react-feather';
 import UgjsLogo from '../images/ugjs-logo-sm.png';
+import TwitterLogo from '../images/twitter-icon.png'
 
 console.log("alskdjfa;d", UgjsLogo)
 
@@ -56,7 +56,7 @@ const Footer = () => {
               component={Link}
               to="https://twitter.com/undergroundjs"
             >
-              <Twitter />
+              <img className="twitter" src={TwitterLogo} alt="UgjsLogo" />
             </a>
           </ul>
         </div>

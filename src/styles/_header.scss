@@ -1,0 +1,32 @@
+.navbar {
+    box-sizing: border-box;
+    min-width: 0;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    overflow-x: auto;
+
+    .navbarTitle {
+        font-family: system-ui,sans-serif;
+        line-height: 1.5;
+        color: inherit;
+        text-decoration: none;
+        font-weight: 600;
+        white-space: nowrap;
+        flex: none;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    
+        &:hover {
+            cursor: pointer;
+            color: $secondary;  
+          }
+    }
+
+}

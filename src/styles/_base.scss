@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Ceviche+One|Oswald|Staatliches&display=swap');
+
+// Fonts:
+$MainHeadlineFont: 'Ceviche One', cursive;
+$HeaderFont: 'Staatliches', cursive; // Should only by used in h1
+$BodyFont: 'Oswald', sans-serif;
+
+// Colors: 
+$primary: #f48705;
+$secondary: #f5b004;
+$muted: #f6eeff;
+$fontColor: #555555;
+$horizontalLine: #F58704;
+$backgroundColor: #FFFFFF;
+$charcoal: #555555;
+$darkGray: #CCCCCC;
+$midGray: #DDDDDD;
+$lightGray: #EEEEEE;
+$footerColor: #000000;
+$orange: #F48705;
+$yellow: #F5B005;
+
+// Font-Weights:
+$fontsBody: 400;
+$fontBold: 600;
+$fontHeading: 900;
+
+// Font-Sizes:
+$text-xs: .75rem;
+$text-sm: .875rem;
+$text-base: 1rem;
+$text-lg: 1.125rem;
+$text-xl: 1.25rem;
+$text-2xl: 1.5rem;
+$text-3xl: 1.875rem;
+$text-4xl: 2.25rem;
+$text-5xl: 3rem;
+$text-6xl: 4rem;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+  }
+
+a {
+  color: $primary;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+  &:hover {
+      cursor: pointer;
+      color: $secondary;  
+  }
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: $primary;
+    border-color:$primary;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    border: 0;
+    border-radius: 0.25rem;
+    line-height: 1.2;
+    white-space: nowrap;
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    margin: 0.25rem;
+    cursor: pointer;
+
+    &:hover, &:active, &:visited, &:target {
+        background-color: $secondary; 
+        border-color: $secondary; 
+    }
+}
+
+.highlight {
+  background-color: $primary;
+}
+
+p {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}

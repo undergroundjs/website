@@ -12,14 +12,21 @@ module.exports = {
     twitter: 'https://twitter.com/undergroundjs',
     instagram: '',
   },
-  __experimentalThemes: ['gatsby-theme-conference'],
   plugins: [
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/images`,
-        name: 'images',
-      },
+        name: 'images'
+      }
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /svgs/ 
+        }
+      }
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
@@ -30,6 +37,10 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     'gatsby-plugin-offline',
+    `gatsby-plugin-react-helmet`,
     'gatsby-plugin-netlify', // make sure to keep it last in the array
+    {
+      resolve: `gatsby-plugin-sass`,
+    },
   ],
 };
